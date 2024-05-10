@@ -1,0 +1,259 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+/* body */
+html {
+  font-family: 'Tajawal', sans-serif;
+}
+body {
+  background: rgba(78, 75, 75, 0.562);
+}
+body::before {
+  content:"";
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('Background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  filter: blur(0px) brightness(80%);
+  opacity:0.8;
+}
+
+
+/* logo image */
+header{
+  text-align: center;
+}
+img{
+  width: 35%;
+}
+
+
+/* arabic and english language pic */
+#arabic{
+  display: inline;
+  width: 4%;
+   }
+   
+#english{
+  display: inline;
+  position: absolute;
+  width: 4%;
+  margin-left: -2%;
+    }
+
+
+/* survey container */
+#survey-form {
+  text-align: center !important;
+  align-content: center;
+}
+
+
+/* qoustions container */
+.question {
+  background: rgba(136, 135, 135, 0.322);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: center !important;
+}
+
+
+/* questions text styling */
+div p{
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  }
+
+
+  /* hide radio for q1 input - question2 - counter */
+  .hidden {
+    display: none;
+
+
+  /* q1 emojis */
+  }
+  label{
+    display: inline-block;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    transition: all 0.2s ease;
+  }
+  #rate-Q1-5:hover ~ .fa-grin-stars{
+    color: #2ceb12;
+  }
+  #rate-Q1-5:checked ~ .fa-grin-stars
+  {
+    color: #2ceb12;
+    text-shadow: 0 0 20px #26af14;
+  }
+  #rate-Q1-4:hover ~ .fa-smile-beam
+  {
+    color: #238a15;
+  }
+  #rate-Q1-4:checked ~ .fa-smile-beam
+  {
+    color: #238a15;
+    text-shadow: 0 0 20px #1e7e11;
+  }
+  #rate-Q1-3:hover ~ .fa-meh
+  {
+    color: #e0d52f;
+  }
+  #rate-Q1-3:checked ~ .fa-meh
+  {
+    color: #e0d52f;
+    text-shadow: 0 0 20px #998f03;
+  }
+  #rate-Q1-2:hover ~ .fa-frown
+  {
+    color: #ee5f0d;
+  }
+  #rate-Q1-2:checked ~ .fa-frown
+  {
+    color: #ee5f0d;
+    text-shadow: 0 0 20px rgb(218, 103, 16);
+  }
+  #rate-Q1-1:hover ~ .fa-angry
+  {
+    color: #dc2909;
+  }
+  #rate-Q1-1:checked ~ .fa-angry
+  {
+    color: #dc2909;
+    text-shadow: 0 0 20px #a11d06;
+  }
+/* text under q1 emojis */
+  .text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+  }
+
+
+  /* q3 textarea */
+  textarea {
+    box-sizing: border-box;
+    min-height: 2rem;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 100%;
+    box-shadow: inset 0 0 .2em .1em rgba(0, 0, 0, .2);
+    background-color: #ebebeba4;
+    color: rgb(0, 0, 0);
+  }
+  textarea:focus {
+    outline: 0;
+    box-shadow: 2px 2px 0.3rem 0.3rem 	hsla(0, 0%, 20%, 0.3), 0 0 0.1rem 0.1rem 	hsla(0, 0%, 20%, 0.3); 
+  }
+
+
+  /* space at the end of the form */
+  .space{
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  
+  #submit1,#submit2{
+    /* hide submit button in first page */
+    margin-top: 1%;
+    outline: 0;
+    transition: all .2s ease-out;
+    box-sizing: border-box;
+    min-height: 1rem;
+    transition: all .3s ease-out;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    width: 82%;
+    padding: .5rem 0;
+    background: rgb(115,205,225);
+    color: rgb(63,68,73);
+    font-weight: 600;
+    border-color: hsl(0, 0%, 0%);
+  }
+
+  #submit1:hover,#submit2:hover{
+      background: rgb(78, 141, 155);
+  }
+
+/* qustions counter */
+  #counter{
+    padding-top: 3%;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+  }
+
+
+/* q2 text alignment */
+  .alignment {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+
+
+/* q2 checkbox */
+  input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+  }
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+
+
+/* responsive view */
+  @media all and (max-width: 980px) {
+    .question,#body-form {
+      width: 95%;
+      margin: 0 auto;
+      padding: 1rem 1rem;
+      text-align: center !important;
+    }
+  }
+  @media all and (max-width: 980px) {
+     #arabic{
+     width: 6%;
+     }}
+               
+  @media all and (max-width: 980px) {
+    #english{
+    width: 6%;
+    margin-left: -30px;
+    }}
+
+  @media all and (max-width: 980px) { 
+   #submit{
+    width: 100%;
+  }}
+
+@media all and (max-width: 980px) { 
+  .alignment{
+    font-size: 40px;
+  }}
+
+

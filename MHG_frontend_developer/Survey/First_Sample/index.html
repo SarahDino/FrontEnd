@@ -1,0 +1,111 @@
+<!DOCTYPE html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Rating form</title>
+    <link rel="stylesheet" href = "SharedStyles.css">
+    <link rel="stylesheet" id="style" href = "ArabicStyle.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+    <div>
+      <input type="image" src="ArabicIcon.png" id="arabic" class="btn btn-outline-success"/>
+      <input type="image" src="EnglishIcon.png" id="english" class="btn btn-outline-success"/>
+  </div>
+</nav>
+<!-- logo -->
+<header>
+  <a href="https://www.build-station.com/sa-ar"> <img src="BuildStationLogo.png"></a>
+</header>
+
+<br>
+<div  class="container" id="body-form">
+  <form  id="survey-form" method="POST">
+  <!--Q1-->
+    <div class="question" id="question1">
+      <p id="q1">كيف تقيم تجربتك معنا؟</p>
+
+      <input type="radio" name="question1" id="rate-Q1-5" class="hidden" value="5">
+      <label  for="rate-Q1-5" class="far fa-grin-stars" onclick="showSubmitButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-4" class="hidden" value="4">
+      <label  for="rate-Q1-4" class="far fa-smile-beam" onclick="showSubmitButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-3" class="hidden" value="3" >
+      <label  for="rate-Q1-3" class="far fa-meh" onclick="showSubmitButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-2" class="hidden" value="2">
+      <label  for="rate-Q1-2" class="far fa-frown" onclick="showSubmitButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-1" class="hidden" value="1">
+      <label  for="rate-Q1-1" class="far fa-angry" onclick="showSubmitButton()"></label>
+      <div class="footer">
+        <span class="text"></span>
+        </div>
+
+        <!-- First submit button -->
+        <input type="submit" id="submit1" value="إرسال" class="hidden" >
+  </div>
+
+
+  <br>
+<!--Q2-->
+<div class="question hidden" id="question2">
+  <p id="q2">هل هناك أي شيء يمكننا تحسينه لتعزيز رضاك كعميل؟ (اختياري)</p>
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="quality" value="The quality of our products"><label for="quality" class="alignment"  id="quality1">جودة منتجاتنا</label></div>
+  
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="value" value="The value of the product for the money paid"><label for="value" class="alignment"  id="value1">قيمة المنتج مقابل المال المدفوع </label></div>
+  
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="availability" value="The availability of our products"><label  for="availability" class="alignment"  id="availability1">توفر المنتجات لدينا </label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="help" value="Our Staff possess sufficent Knowledge to assist you"><label for="help" class="alignment" id="help1">موظفينا لديهم المعرفة الكافية لخدمتك</label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="speed" value="The responsiveness of our Staff in serving you"><label for="speed" class="alignment" id="speed1">سرعة استجابة موظفينا لخدمتك</label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="requirements" value="The product is suitable for your requirements"><label for="requirements" class="alignment" id="requirements1">المنتج متناسب مع متطلباتك</label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="aftersales" value="Quality of after-sales service"><label for="aftersales" class="alignment" id="aftersales1">جودة خدمة ما بعد البيع</label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="maintenance" value="Quality of maintenance"><label for="maintenance" class="alignment" id="maintenance1">جودة خدمات الصيانه</label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="delivery" value="Speed of delivery/service"><label for="delivery" class="alignment" id="delivery1">سرعة توصيل الطلبية</label></div>
+
+  <div class="checkbox-container question2"><input type="checkbox" name="question2" id="Responsiveness" value="Responsiveness to inquiries/complaints"><label for="Responsiveness" class="alignment" id="Responsiveness1">الاستجابة للاستفسارات / الشكاوى</label></div>
+
+  <div class="checkbox-container question2"> <input type="checkbox" name="question2" id="Trustworthiness" value="Trustworthiness/transparency"><label for="Trustworthiness" class="alignment" id="Trustworthiness1">المصداقية / الشفافية</label></div>
+</div>
+
+<br><br>
+<!--Q3-->
+<div class="question hidden" id="question3">
+  <p id="q3">هل هناك أي شيء يمكننا تحسينه لتعزيز رضاك كعميل؟ (اختياري) </p>
+    <textarea name="question3"></textarea>
+    <br><br>
+
+    <!-- seconde send button -->
+    <br>
+    <input type="submit" id="submit2" value="إرسال">
+  </div>
+  <div class="footer"></div>
+
+
+
+
+  <!-- questions counter -->
+  <div id="counter"></div>
+  </div>
+
+  <!-- space under the counter -->
+  <div class="space"></div>
+</div>
+</form>
+
+<!-- script to switch questions -->
+<script src="SwitchQuestionsScript.js"></script>
+
+<!-- script to translate the page -->
+<script src="IndextTranslationScript.js"></script>
+
+<!-- hide and display next button and counter in q1 page -->
+<script src="HideScript.js"></script>
+
+
+</body>
+</html>

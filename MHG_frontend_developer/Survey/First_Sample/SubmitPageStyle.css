@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+html {
+  font-family: 'Tajawal', sans-serif;
+}
+body {
+  background: rgba(78, 75, 75, 0.562);
+}
+body::before {
+  content:"";
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('Background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  filter: blur(0px) brightness(80%);
+  opacity:0.8;
+}
+
+a img{
+  width: 35%;
+}
+img{
+  width: 17%;
+}
+
+#body-form {
+  text-align: center !important;
+  align-content: center;
+}
+#survey-form {
+  background: rgba(63, 68, 73, 0.185);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: center !important;
+}
+
+p{
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(63,68,73);
+}
+  #button{
+    outline: 0;
+    transition: all .2s ease-out;
+    box-sizing: border-box;
+    min-height: 2rem;
+    transition: all .3s ease-out;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    border-radius: .5rem;
+    border: 1px solid grey;
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 60%;
+    display: inline-block;
+    padding: 5px 0;
+    background: rgb(115,205,225);
+    color: rgb(63,68,73);
+    border-color: hsl(0, 0%, 0%);
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  #button:hover{
+    background: rgb(78, 141, 155);
+  }
+  
+
+  
+  .space{
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+      @media all and (max-width: 980px) {
+        #survey-form, #body-form {
+          width: 95%;
+          margin: 0 auto;
+          padding: 1rem 1rem;
+          text-align: center !important;
+        }
+      }
+      
+
+      @media all and (max-width: 980px) { 
+        #submit{
+        width: 100%;
+      }
+    }

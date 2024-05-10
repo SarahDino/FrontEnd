@@ -1,0 +1,35 @@
+#rate-Q1-5:checked ~ .footer .text::before
+{
+  content:"أحببته";
+}
+#rate-Q1-4:checked ~ .footer .text::before
+{
+  content:"ممتاز";
+}
+#rate-Q1-3:checked ~ .footer .text::before
+{
+  content:"محايد";
+}
+#rate-Q1-2:checked ~ .footer .text::before
+{
+  content:"غير جيد";
+}
+#rate-Q1-1:checked ~ .footer .text::before
+{
+  content:"سيء"; }
+  
+
+/* comment in the arabic version typing starts from right to left */
+  textarea {
+    text-align: right;
+  }
+
+  
+/* checkbox postion */
+  .checkbox-container {
+    direction: rtl;
+  }
+
+
+
+  
