@@ -22,3 +22,20 @@ Survey View Features:
 8. Redirect to Store: After completing the survey, users are redirected to another page with a button to further redirect them to the store, facilitating seamless navigation.
 
 
+![](computerView.PNG)
+<br><br>
+
+![](computerView1.PNG)
+<br><br>
+
+![](computerView2.PNG)
+<br><br>
+
+![](computerView3.PNG)
+<br><br>
+
+![](computerView4.PNG)
+<br><br>
+
+![](computerView5.PNG)
+<br><br>
