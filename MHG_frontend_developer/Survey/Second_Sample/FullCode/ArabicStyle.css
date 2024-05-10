@@ -1,0 +1,75 @@
+
+  /* Q1 */
+  #rate-Q1-5:checked ~ .footer .text::before,
+  #rate-Q2-5:checked ~ .footer .text::before,
+  #rate-Q3-5:checked ~ .footer .text::before,
+  #rate-Q4-5:checked ~ .footer .text::before,
+  #rate-Q5-5:checked ~ .footer .text::before,
+  #rate-Q6-5:checked ~ .footer .text::before,
+  #rate-Q7-5:checked ~ .footer .text::before {
+    content:"أحببته";
+  }
+  
+    /* 4 */
+  #rate-Q1-4:checked ~ .footer .text::before,
+  #rate-Q2-4:checked ~ .footer .text::before,
+  #rate-Q3-4:checked ~ .footer .text::before,
+  #rate-Q4-4:checked ~ .footer .text::before,
+  #rate-Q5-4:checked ~ .footer .text::before,
+  #rate-Q6-4:checked ~ .footer .text::before,
+  #rate-Q7-4:checked ~ .footer .text::before {
+    content:"ممتاز";
+  }
+  
+  /* 3 */
+  #rate-Q1-3:checked ~ .footer .text::before,
+  #rate-Q2-3:checked ~ .footer .text::before,
+  #rate-Q3-3:checked ~ .footer .text::before,
+  #rate-Q4-3:checked ~ .footer .text::before,
+  #rate-Q5-3:checked ~ .footer .text::before,
+  #rate-Q6-3:checked ~ .footer .text::before,
+  #rate-Q7-3:checked ~ .footer .text::before {
+    content:"محايد";
+  }
+  
+  /* 2 */
+  #rate-Q1-2:checked ~ .footer .text::before,
+  #rate-Q2-2:checked ~ .footer .text::before,
+  #rate-Q3-2:checked ~ .footer .text::before,
+  #rate-Q4-2:checked ~ .footer .text::before,
+  #rate-Q5-2:checked ~ .footer .text::before,
+  #rate-Q6-2:checked ~ .footer .text::before,
+  #rate-Q7-2:checked ~ .footer .text::before {
+    content:"غير جيد";
+  }
+  
+  /* 1 */
+  #rate-Q1-1:checked ~ .footer .text::before,
+  #rate-Q2-1:checked ~ .footer .text::before,
+  #rate-Q3-1:checked ~ .footer .text::before,
+  #rate-Q4-1:checked ~ .footer .text::before,
+  #rate-Q5-1:checked ~ .footer .text::before,
+  #rate-Q6-1:checked ~ .footer .text::before,
+  #rate-Q7-1:checked ~ .footer .text::before {
+    content:"سيء"; 
+  }
+  
+  
+
+/* comment in the arabic version typing starts from right to left */
+  textarea {
+    text-align: right;
+  }
+
+  
+/* checkbox postion */
+  .checkbox-container {
+    direction: rtl;
+  }
+
+  /* aligne qustion3 content */
+  .alignment {
+    text-align: right;
+  }
+
+  
