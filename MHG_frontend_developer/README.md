@@ -1,6 +1,6 @@
 # MHG Company Prototype Repository
 
-This repository serves as a collection of frontend prototypes developed for various projects within MHG Company. Below is a brief overview of the contents of this repository:
+This repository serves as a collection of frontend project i have worked ony. Below is a brief overview of the contents of this repository:
 
 Folders:
 
