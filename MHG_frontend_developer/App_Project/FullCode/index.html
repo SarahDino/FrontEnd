@@ -1,0 +1,702 @@
+<!DOCTYPE html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+    <meta charset="UTF-8">
+    <title> Build Station</title>
+
+
+
+        <!-- bootstrap for header-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- product category slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <!-- splide slider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+        
+        <!-- syles -->
+        <link rel="stylesheet" href="shared.css">
+        <link rel="stylesheet" id="stylingfile" href="eng.css">
+
+    
+  </head>
+<body>
+
+
+  <!-- heder and page content container -->
+   <div class="header-content-container">
+
+
+  <!-- heder -->
+    <header>
+<div class="header-container">
+  <nav class="navbar navbar-light navbar-expand-lg ">
+      <!-- off canva on phone view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+          <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-0">
+            <li class="nav-item flag">
+              <a class="nav-link" id="Saudi-Flag" aria-current="page" href="#"><img  src="pics\Saudi-Flag.png" alt="country flag" ></a>
+            </li>
+            <li class="nav-item padding-lang">
+              <button class="nav-link lang"  id="arabic" >العربيه</button>
+              <button class="nav-link lang" id="english" onclick="switchJS()">English</button>
+            </li>
+
+<hr class="offcanvas-devider">
+
+<li class="nav-item">
+  <a class="nav-link" id="shopping-cart-header" aria-current="page" href="#"><img  src="pics\shopping-cart.png" alt="List" ></a>
+</li>
+
+<!-- some footer emlment will show on phone view -->
+              <div class="footer-in-header">
+
+                <li class="nav-item">
+                  <a class="nav-link" id="list-icon-header" aria-current="page" href="#"><img  src="pics\shopping-cart.png" alt="list"><span id="list-header-text">LIST</span></a>
+                </li>
+
+                <hr class="offcanvas-devider">
+
+                <li class="nav-item">
+                  <a class="nav-link" id="scan-icon-header" aria-current="page" href="#"><img src="pics\scan-icon-blue.png" alt="scan"><span id="scan-header-text">SCAN A NEW PRODUCT</span></a>
+                </li>
+
+                <hr class="offcanvas-devider">
+                
+                <li class="nav-item">
+                  <a class="nav-link" id="home-icon-header" aria-current="page" href="#"><img src="pics\home-icon-blue.png" alt="home"><span id="home-header-text">HOME</span></a>
+                </li>
+              </div> 
+      
+          </ul>
+        </div>
+      </div>
+      <!-- search -->
+      <div class="search">
+      <form class="d-flex">
+        <input class="form-control me-2" id="searchplaceholder" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg></button>
+      </form>
+    </div>
+    <!-- logo -->
+    <a class="navbar-brand" href="#"><img src="pics\BuildStation-logo.png" class="logo" alt="build-station logo"></a>
+
+  </nav>
+  <hr class="divider-bottom">
+
+</div>
+    </header>
+
+
+  <div class="content-container">
+      <!-- image and thumbnail container -->
+  <div class="images-container">
+
+  <!-- product image section -->
+    <section id="image-carousel" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="pics\product1.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product2.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product3.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product1.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product2.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product3.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product1.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product2.png" alt="product pic">
+          </li>
+          <li class="splide__slide">
+            <img src="pics\product3.png" alt="product pic">
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- thumbnail section -->
+    <section id="thumbnail-carousel" class="splide" >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="pics\product1.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product2.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product3.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product1.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product2.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product3.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product1.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product2.png" alt="product pic">
+        </li>
+        <li class="splide__slide">
+          <img src="pics\product3.png" alt="product pic">
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+        </div>
+
+
+
+
+<!-- content next to the product image -->
+<div class="product-content">
+  <h1 id="product-name">Angle valve - AVE002</h1>
+  <div class="inline">
+  <img class="tiny-logo" src="pics\Hatch-logo.png" alt="brand logo">
+  <p id="brand-name">Hatch Sanitary</p></div>
+  <p id="product-code">Product Code: SW01330082</p>
+  <div class="price inline">
+  <h1>45.00</h1>
+  <p id="currncy">SAR</p></div>
+
+    <!-- buttons -->
+  <div class="buttons-container">
+    <button class="Add-to-List" id="Add-to-List">Add to List</button>
+    <button class="Lost-a-Sale" id="Lost-a-Sale">Lost a Sale</button>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="availblity-stock-container">
+
+  <!-- availblity section -->
+<div class="availblity-Preordered">
+
+    <div class="availblity-container">
+
+    <p class="availble" id="availble">Estimated Time Of Arrival! ( 1/1/2024 )</p>
+
+    <!-- uncomment when needed -->
+    <!-- <p class="Not-Available" id="Not-Available">Not Available Anymore!</p>-->
+    <!-- <p class="Arriving-Soon" id="Arriving-Soon">Arriving Soon!</p> -->
+
+  </div>
+  <div class="Preordered">
+    <p id="Preordered">Preordered</p>
+    <table id="Preordered-table">
+      <tbody>
+      <tr> <td class="left-column" id="Preordered-Quantity">Quantity</td> <td class="right-column" id="Preordered-num">5</td> </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+<!-- stock table section -->
+<div class="stock">
+<p id="Stock">Stock</p>
+<table id="stock-table">
+  <tbody>
+    
+  <tr> <th class="left-column" id="Wearhouse">Warehouse</th> <th class="right-column" id="Quantity">Quantity</th> </tr>
+
+  <tr> <td class="left-column" id="Wearhouse1">malaz</td> <td class="right-column" id="Quantity1">92</td> </tr>
+
+  <tr> <td class="left-column" id="Wearhouse2">kh-b</td> <td class="right-column" id="Quantity2">17</td> </tr>
+
+  <tr> <td class="left-column" id="Wearhouse3">branch</td> <td class="right-column" id="Quantity3">21</td> </tr>
+
+  <tr> <td class="left-column" id="Wearhouse4">branch</td> <td class="right-column" id="Quantity4">73</td> </tr>
+
+  <tr> <td class="left-column" id="Wearhouse5">brancj</td> <td class="right-column" id="Quantity5">7</td> </tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+<div class="Description-Specification-container">
+
+  <!-- Description section -->
+  <div class="inline-Description">
+<div class="Description ">
+<p id="Description-heading">Description</p>
+<hr>
+<p id="Description-content">With this choice. Available in Saudi Arabia and the Gulf countries for smart living. It is connected to wifi to be controlled from the application and from anywhere in the world, and when the network is interrupted, you can control it through Bluetooth via the illus illus application.
+  Features:
+  Easy to use
+  You can control the intensity of lighting, the color tone.
+  Dimmable works with Alexa, Google Assist and Siri.
+  Other specifications:
+  They correspond to the internal dimming of the lighting by </p>
+</div>
+</div>
+
+<!-- Specification section -->
+<div class="Specification">
+  <p id="Specification">Specification</p>
+  <hr>
+<table class="specification-table">
+  <tbody>
+    
+  <tr> <td class="left-column" id="CRI">CRI</td> <td class="right-column" id="CRI-num">90</td> </tr>
+
+  <tr> <td class="left-column" id="Temperature">Temperature</td> <td class="right-column" id="Temperature-num">-20°C~45°C</td> </tr>
+
+  <tr> <td class="left-column" id="SwitchingCycle-num">50000</td> <td class="right-column" id="SwitchingCycle">Switching Cycle</td> </tr>
+
+  <tr> <td class="left-column" id="LifeSpan">Life Span (at hour)</td> <td class="right-column" id="LifeSpan-num">15000</td> </tr>
+
+  <tr> <td class="left-column" id="Dimmer-yes">Yes</td> <td class="right-column" id="Dimmer">Dimmer</td> </tr>
+
+  <tr> <td class="left-column" id="ip">IP</td> <td class="right-column" id="ip-num">20</td> </tr>
+
+  <tr> <td class="left-column" id="Angle-degree">220°</td> <td class="right-column" id="Angle">Beam Angle</td> </tr>
+
+</tbody>
+</table>
+
+
+</div>
+
+
+<!-- user-manual section -->
+<div class="padding-user-manual">
+<div class="user-manual">
+  <p id="User-manual">User manual</p>
+  <hr>
+  <div class="pdf-icon-padding">
+  <a href="myfile.pdf" download >
+    <img class="pdf-icon" src="pics\pdf-icon.png" alt="pdf">
+    <span id="User-manual-pdf">User manual</span></a>
+  <a href="myfile.pdf" download >
+    <img class="pdf-icon" src="pics\pdf-icon.png" alt="Video">
+    <span id="User-manual-Videos">Videos</span></a> 
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- -------------Related Products------------- -->
+<div class="gray">
+<div class="products-category">
+  <div class="container"> <div class="row"> <div class="Related-Products"> <div class="splide__track">
+  <p class="products-category-header" id="Related-Products">Related Products</p>
+  <hr class="devider-products-category">
+ <div class="splide__list">
+  
+<div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+  <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+  <p class="card-title" id="name1slider1">Surface-mounted LED Luminaires</p>
+  <div class="price inline">
+    <p class="card-price">29</p >
+    <h1 class="card-currncy" id="currncy1slider1">SAR</h1></div>
+    <p class="vat" id="vat1slider1">Inclusive of VAT<p>
+    </div> </div> </div>
+
+    <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+      <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+      <p class="card-title" id="name2slider1">Surface-mounted LED Luminaires</p>
+      <div class="price inline">
+        <p class="card-price">29</p >
+        <h1 class="card-currncy" id="currncy2slider1">SAR</h1></div>
+        <p class="vat" id="vat2slider1">Inclusive of VAT<p>
+        </div> </div> </div>
+
+<div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+  <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+  <p class="card-title" id="name3slider1">Surface-mounted LED Luminaires</p>
+  <div class="price inline">
+    <p class="card-price">29</p >
+    <h1 class="card-currncy" id="currncy3slider1">SAR</h1></div>
+    <p class="vat" id="vat3slider1">Inclusive of VAT<p>
+    </div> </div> </div>
+
+    <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+      <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+      <p class="card-title" id="name4slider1">Surface-mounted LED Luminaires</p>
+      <div class="price inline">
+        <p class="card-price">29</p >
+        <h1 class="card-currncy" id="currncy4slider1">SAR</h1></div>
+        <p class="vat" id="vat4slider1">Inclusive of VAT<p>
+        </div> </div> </div>
+
+        <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+          <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+          <p class="card-title" id="name5slider1">Surface-mounted LED Luminaires</p>
+          <div class="price inline">
+            <p class="card-price">29</p >
+            <h1 class="card-currncy" id="currncy5slider1">SAR</h1></div>
+            <p class="vat" id="vat5slider1">Inclusive of VAT<p>
+            </div> </div> </div>
+
+
+            <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+              <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+              <p class="card-title" id="name6slider1">Surface-mounted LED Luminaires</p>
+              <div class="price inline">
+                <p class="card-price">29</p >
+                <h1 class="card-currncy" id="currncy6slider1">SAR</h1></div>
+                <p class="vat" id="vat6slider1">Inclusive of VAT<p>
+                </div> </div> </div>                      
+
+                <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                  <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                  <p class="card-title" id="name7slider1">Surface-mounted LED Luminaires</p>
+                  <div class="price inline">
+                    <p class="card-price">29</p >
+                    <h1 class="card-currncy" id="currncy7slider1">SAR</h1></div>
+                    <p class="vat" id="vat7slider1">Inclusive of VAT<p>
+                    </div> </div> </div>
+
+<div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+  <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+  <p class="card-title" id="name8slider1">Surface-mounted LED Luminaires</p>
+  <div class="price inline">
+    <p class="card-price">29</p >
+    <h1 class="card-currncy" id="currncy8slider1">SAR</h1></div>
+    <p class="vat" id="vat8slider1">Inclusive of VAT<p>
+    </div> </div> </div>
+
+                      </div></div></div></div></div></div></div>
+  
+
+
+    <!-- -------------Addions of the products------------- -->
+    <div class="blue">
+                        <div class="products-category ">
+                          <div class="container"> <div class="row"> <div class="Addions-of-the-products"> <div class="splide__track">
+                          <p class="products-category-header" id="Addions-of-the-products">Addions of the products</p>
+                          <hr class="devider-products-category">
+                         <div class="splide__list">
+                          
+                          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                            <p class="card-title" id="name1slider2">Surface-mounted LED Luminaires</p>
+                            <div class="price inline">
+                              <p class="card-price">29</p >
+                              <h1 class="card-currncy" id="currncy1slider2">SAR</h1></div>
+                              <p class="vat" id="vat1slider2">Inclusive of VAT<p>
+                              </div> </div> </div>
+                          
+                              <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                                <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                                <p class="card-title" id="name2slider2">Surface-mounted LED Luminaires</p>
+                                <div class="price inline">
+                                  <p class="card-price">29</p >
+                                  <h1 class="card-currncy" id="currncy2slider2">SAR</h1></div>
+                                  <p class="vat" id="vat2slider2">Inclusive of VAT<p>
+                                  </div> </div> </div>
+                          
+                          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                            <p class="card-title" id="name3slider2">Surface-mounted LED Luminaires</p>
+                            <div class="price inline">
+                              <p class="card-price">29</p >
+                              <h1 class="card-currncy" id="currncy3slider2">SAR</h1></div>
+                              <p class="vat" id="vat3slider2">Inclusive of VAT<p>
+                              </div> </div> </div>
+                          
+                              <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                                <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                                <p class="card-title" id="name4slider2">Surface-mounted LED Luminaires</p>
+                                <div class="price inline">
+                                  <p class="card-price">29</p >
+                                  <h1 class="card-currncy" id="currncy4slider2">SAR</h1></div>
+                                  <p class="vat" id="vat4slider2">Inclusive of VAT<p>
+                                  </div> </div> </div>
+                          
+                                  <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                                    <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                                    <p class="card-title" id="name5slider2">Surface-mounted LED Luminaires</p>
+                                    <div class="price inline">
+                                      <p class="card-price">29</p >
+                                      <h1 class="card-currncy" id="currncy5slider2">SAR</h1></div>
+                                      <p class="vat" id="vat5slider2">Inclusive of VAT<p>
+                                      </div> </div> </div>
+                          
+                          
+                                      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                                        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                                        <p class="card-title" id="name6slider2">Surface-mounted LED Luminaires</p>
+                                        <div class="price inline">
+                                          <p class="card-price">29</p >
+                                          <h1 class="card-currncy" id="currncy6slider2">SAR</h1></div>
+                                          <p class="vat" id="vat6slider2">Inclusive of VAT<p>
+                                          </div> </div> </div>                      
+                          
+                                          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                                            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                                            <p class="card-title" id="name7slider2">Surface-mounted LED Luminaires</p>
+                                            <div class="price inline">
+                                              <p class="card-price">29</p >
+                                              <h1 class="card-currncy" id="currncy7slider2">SAR</h1></div>
+                                              <p class="vat" id="vat7slider2">Inclusive of VAT<p>
+                                              </div> </div> </div>
+                          
+                          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                            <p class="card-title" id="name8slider2">Surface-mounted LED Luminaires</p>
+                            <div class="price inline">
+                              <p class="card-price">29</p >
+                              <h1 class="card-currncy" id="currncy8slider2">SAR</h1></div>
+                              <p class="vat" id="vat8slider2">Inclusive of VAT<p>
+                              </div> </div> </div>
+
+                                                </div></div></div></div></div></div>   </div>                       
+                        
+    <!-- -------------cross-selling Products------------- -->
+    <div class="gray">
+    <div class="products-category">
+      <div class="container"> <div class="row"> <div class="cross-selling-Products"> <div class="splide__track">
+      <p class="products-category-header" id="cross-selling-Products">cross selling Products</p>
+      <hr class="devider-products-category">
+    <div class="splide__list">
+      
+      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+        <p class="card-title" id="name1slider3">Surface-mounted LED Luminaires</p>
+        <div class="price inline">
+          <p class="card-price">29</p >
+          <h1 class="card-currncy" id="currncy1slider3">SAR</h1></div>
+          <p class="vat" id="vat1slider3">Inclusive of VAT<p>
+          </div> </div> </div>
+      
+          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+            <p class="card-title" id="name2slider3">Surface-mounted LED Luminaires</p>
+            <div class="price inline">
+              <p class="card-price">29</p >
+              <h1 class="card-currncy" id="currncy2slider3">SAR</h1></div>
+              <p class="vat" id="vat2slider3">Inclusive of VAT<p>
+              </div> </div> </div>
+      
+      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+        <p class="card-title" id="name3slider3">Surface-mounted LED Luminaires</p>
+        <div class="price inline">
+          <p class="card-price">29</p >
+          <h1 class="card-currncy" id="currncy3slider3">SAR</h1></div>
+          <p class="vat" id="vat3slider3">Inclusive of VAT<p>
+          </div> </div> </div>
+      
+          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+            <p class="card-title" id="name4slider3">Surface-mounted LED Luminaires</p>
+            <div class="price inline">
+              <p class="card-price">29</p >
+              <h1 class="card-currncy" id="currncy4slider3">SAR</h1></div>
+              <p class="vat" id="vat4slider3">Inclusive of VAT<p>
+              </div> </div> </div>
+      
+              <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                <p class="card-title" id="name5slider3">Surface-mounted LED Luminaires</p>
+                <div class="price inline">
+                  <p class="card-price">29</p >
+                  <h1 class="card-currncy" id="currncy5slider3">SAR</h1></div>
+                  <p class="vat" id="vat5slider3">Inclusive of VAT<p>
+                  </div> </div> </div>
+      
+      
+                  <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                    <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                    <p class="card-title" id="name6slider3">Surface-mounted LED Luminaires</p>
+                    <div class="price inline">
+                      <p class="card-price">29</p >
+                      <h1 class="card-currncy" id="currncy6slider3">SAR</h1></div>
+                      <p class="vat" id="vat6slider3">Inclusive of VAT<p>
+                      </div> </div> </div>                      
+      
+                      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                        <p class="card-title" id="name7slider3">Surface-mounted LED Luminaires</p>
+                        <div class="price inline">
+                          <p class="card-price">29</p >
+                          <h1 class="card-currncy" id="currncy7slider3">SAR</h1></div>
+                          <p class="vat" id="vat7slider3">Inclusive of VAT<p>
+                          </div> </div> </div>
+      
+      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+        <p class="card-title" id="name8slider3">Surface-mounted LED Luminaires</p>
+        <div class="price inline">
+          <p class="card-price">29</p >
+          <h1 class="card-currncy" id="currncy8slider3">SAR</h1></div>
+          <p class="vat" id="vat8slider3">Inclusive of VAT<p>
+          </div> </div> </div>
+
+
+        </div></div></div></div></div></div></div>
+
+
+    <!-- -------------Upselling Products------------- -->
+    <div class="blue">
+    <div class="products-category">
+      <div class="container"> <div class="row"> <div class="Upselling-Products"> <div class="splide__track"> 
+      <p class="products-category-header" id="Upselling-Products">Upselling Products</p>
+      <hr class="devider-products-category">
+    <div class="splide__list">
+      
+      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+        <p class="card-title" id="name1slider4">Surface-mounted LED Luminaires</p>
+        <div class="price inline">
+          <p class="card-price">29</p >
+          <h1 class="card-currncy" id="currncy1slider4">SAR</h1></div>
+          <p class="vat" id="vat1slider4">Inclusive of VAT<p>
+          </div> </div> </div>
+      
+          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+            <p class="card-title" id="name2slider4">Surface-mounted LED Luminaires</p>
+            <div class="price inline">
+              <p class="card-price">29</p >
+              <h1 class="card-currncy" id="currncy2slider4">SAR</h1></div>
+              <p class="vat" id="vat2slider4">Inclusive of VAT<p>
+              </div> </div> </div>
+      
+      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+        <p class="card-title" id="name3slider4">Surface-mounted LED Luminaires</p>
+        <div class="price inline">
+          <p class="card-price">29</p >
+          <h1 class="card-currncy" id="currncy3slider4">SAR</h1></div>
+          <p class="vat" id="vat3slider4">Inclusive of VAT<p>
+          </div> </div> </div>
+      
+          <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+            <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+            <p class="card-title" id="name4slider4">Surface-mounted LED Luminaires</p>
+            <div class="price inline">
+              <p class="card-price">29</p >
+              <h1 class="card-currncy" id="currncy4slider4">SAR</h1></div>
+              <p class="vat" id="vat4slider4">Inclusive of VAT<p>
+              </div> </div> </div>
+      
+              <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                <p class="card-title" id="name5slider4">Surface-mounted LED Luminaires</p>
+                <div class="price inline">
+                  <p class="card-price">29</p >
+                  <h1 class="card-currncy" id="currncy5slider4">SAR</h1></div>
+                  <p class="vat" id="vat5slider4">Inclusive of VAT<p>
+                  </div> </div> </div>
+      
+      
+                  <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                    <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                    <p class="card-title" id="name6slider4">Surface-mounted LED Luminaires</p>
+                    <div class="price inline">
+                      <p class="card-price">29</p >
+                      <h1 class="card-currncy" id="currncy6slider4">SAR</h1></div>
+                      <p class="vat" id="vat6slider4">Inclusive of VAT<p>
+                      </div> </div> </div>                      
+      
+                      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+                        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+                        <p class="card-title" id="name7slider4">Surface-mounted LED Luminaires</p>
+                        <div class="price inline">
+                          <p class="card-price">29</p >
+                          <h1 class="card-currncy" id="currncy7slider4">SAR</h1></div>
+                          <p class="vat" id="vat7slider4">Inclusive of VAT<p>
+                          </div> </div> </div>
+      
+      <div class="col-sm-4 splide__slide m-2"><div class="card  text-white"><div class="card-body">
+        <a href="#"> <img src="pics\slider.png" alt="product pic"></a>
+        <p class="card-title" id="name8slider4">Surface-mounted LED Luminaires</p>
+        <div class="price inline">
+          <p class="card-price">29</p >
+          <h1 class="card-currncy" id="currncy8slider4">SAR</h1></div>
+          <p class="vat" id="vat8slider4">Inclusive of VAT<p>
+          </div> </div> </div>
+      
+                            </div></div></div></div></div></div></div>
+
+
+<!-- footer -->
+    <footer>
+      <div class="navbar">
+        <a href="#" class="active"><img src="pics\home-icon.png" alt="home"><p id="home-footer">HOME</p></a>
+        <a href="#"><img src="pics\scan-icon.png" alt="scan"><p id="scan-footer">SCAN A NEW PRODUCT</p></a>
+        <a href="#"><img src="pics\list-icon.png" alt="list"><p id="list-footer">LIST</p></a>
+      </div> 
+
+      <!-- Terms and Conditions footer -->
+      <div class="end-footer">
+      <div id="left-end-footer">
+        <a href="#" id="terms">Terms and Conditions</a>
+        <a href="#" class="space-between1" id="privacy" >Privacy Policy</a>
+      </div>
+
+      <div id="space-between2"></div>
+
+      <div id="right-end-footer"> 
+        <p id="rights">© 2022 Build Station. All Rights Reserved</p>
+      </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- bootstrap for header -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- splide slider -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+        <!-- script -->
+        <script src="switch-language.js"></script>
+        <script src="splide-slider.js"></script>
+  </body>
+
+</html>
+
+
+
