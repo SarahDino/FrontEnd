@@ -1,0 +1,95 @@
+<!DOCTYPE html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Rating form</title>
+    <link rel="stylesheet" id="style" href = "stylear.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body onload="showQuestion(0)">
+    <nav class="navbar navbar-light bg-light">
+    <div>
+      <input type="image" src="ar.png" id="arabic" class="btn btn-outline-success"/>
+      <input type="image" src="en.png" id="english" class="btn btn-outline-success"/>
+  </div>
+</nav>
+<header>
+  <a href="https://www.build-station.com/sa-ar"> <img src="BuildStation-logo.png"></a>
+    <p id="description" >اخبرنا عن تجربتك معنا</p>
+</header>
+<br>
+<div  class="container" id="body-form">
+  <form  id="survey-form" method="POST">
+  <!--Q1-->
+    <div class="question" id="question1">
+      <p id="q1">كيف تقيم رضاك العام عن تعاملك مع شركتنا ومنتجاتنا/خدماتنا؟</p>
+      <input type="radio" name="question1" id="rate-Q1-5" class="hidden ">
+      <label  for="rate-Q1-5" class="far fa-grin-stars"></label>
+      <input type="radio" name="question1" id="rate-Q1-4" class="hidden ">
+      <label  for="rate-Q1-4" class="far fa-smile-beam"></label>
+      <input type="radio" name="question1" id="rate-Q1-3" class="hidden ">
+      <label  for="rate-Q1-3" class="far fa-meh"></label>
+      <input type="radio" name="question1" id="rate-Q1-2" class="hidden ">
+      <label  for="rate-Q1-2" class="far fa-frown"></label>
+      <input type="radio" name="question1" id="rate-Q1-1" class="hidden ">
+      <label  for="rate-Q1-1" class="far fa-angry"></label>
+      <div class="footer">
+        <span class="text"></span>
+        </div>
+        
+        <button class="nextstyle" id="next1" type="button" onclick="nextQuestion()"><span id="nextext1">التالي</span></button>
+  </div>
+  <br>
+  <!--Q2-->
+  <div class="question" id="question2" style="display:none">
+      <p id="q2">بناءا على اجابتك السابقة ، نرجو منك اختيار الاسباب التي أثرت على قرارك ؟</p>
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="quality"><label class="right" for="quality" id="quality1">جودة منتجاتنا</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="value"><label class="right" for="value" id="value1">قيمة المنتج مقابل المال المدفوع </label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="availability"><label for="availability" class="right" id="availability1">توفر المنتجات لدينا </label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="attitude" ><label for="attitude" class="right" id="attitude1">تعامل موظفينا معك </label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="requirements" ><label for="requirements" class="right" id="requirements1">المنتج متناسب مع متطلباتك</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="aftersales" ><label for="aftersales" class="right" id="aftersales1">جودة خدمة ما بعد البيع</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="maintenance" ><label for="maintenance" class="right" id="maintenance1">جودة خدمات الصيانه</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="delivery" ><label for="delivery" class="right" id="delivery1">سرعة توصيل البضاعة</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="Responsiveness" ><label for="Responsiveness" class="right" id="Responsiveness1">الاستجابة للاستفسارات / الشكاوي</label></div>
+      
+      <div class="checkbox-container"> <input type="checkbox" name="question2" id="Trustworthiness" ><label for="Trustworthiness" class="right" id="Trustworthiness1">المصداقية / الشفافية</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="easy"><label for="easy" class="right" id="easy1">سهولة الوصول للمنتجات</label></div>
+
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="speed" ><label for="speed" class="right" id="speed1">سرعة استجابت موظفينا لخدمتكم</label></div>
+      
+      <div class="checkbox-container"><input type="checkbox" name="question2" id="help" ><label for="help" class="right" id="help1">موظفينا لديهم المعلومات الواضحة لإفادتك</label></div>
+      
+      <div class="footer">
+        
+        <button class="prevstyle" id="prev1" type="button" onclick="previousQuestion()"><span id="prevtext1">السابق</span></button>
+        <button class="nextstyle" id="next2" type="button" onclick="nextQuestion()"><span id="nextext2">التالي</span></button>
+  </div>
+</div>
+  <br>
+<!--Q3-->
+<div class="question" id="question3" style="display:none">
+  
+  <p id="q3" >هل هناك أي شيء يمكننا تحسينه لتعزيز رضاك كعميل؟</p>
+    <textarea name="question3"></textarea>
+    <br><br>
+    <input type="submit" id="submit" value="إرسال">
+  </div>
+<div class="counter" id="counter">1 / 3</div>
+  </div>
+  <div class="space"></div>
+</div>
+</form>
+<script src="switchq.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
