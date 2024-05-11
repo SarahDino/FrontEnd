@@ -18,6 +18,8 @@ Features:
 
 7. Store Redirection: Users have the option to visit the store by clicking on the logo displayed on the first page or by clicking a button on the submission confirmation page. This feature encourages users to explore our products further.
 
+![](computerView1.PNG)
+<br><br>
 
 ![](computerView.PNG)
 <br><br>
