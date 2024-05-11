@@ -1,0 +1,113 @@
+<!DOCTYPE html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Rating form</title>
+    <link rel="stylesheet" href = "main.css">
+    <link rel="stylesheet" id="style" href = "stylear.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body onload="showQuestion(0)">
+    <nav class="navbar navbar-light bg-light">
+    <div>
+      <input type="image" src="ar.png" id="arabic" class="btn btn-outline-success"/>
+      <input type="image" src="en.png" id="english" class="btn btn-outline-success"/>
+  </div>
+</nav>
+<!-- logo in header -->
+<header>
+  <a href="https://www.build-station.com/sa-ar"> <img src="BuildStation-logo.png"></a>
+</header>
+
+<br>
+<div  class="container" id="body-form">
+  <form  id="survey-form" method="POST">
+  <!--Q1-->
+    <div class="question" id="question1">
+      <p id="q1">كيف تقيم تجربتك معنا؟</p>
+
+      <input type="radio" name="question1" id="rate-Q1-5" class="hidden">
+      <label  for="rate-Q1-5" class="far fa-grin-stars" onclick="showButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-4" class="hidden">
+      <label  for="rate-Q1-4" class="far fa-smile-beam" onclick="showButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-3" class="hidden">
+      <label  for="rate-Q1-3" class="far fa-meh" onclick="showButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-2" class="hidden">
+      <label  for="rate-Q1-2" class="far fa-frown" onclick="showButton()"></label>
+      <input type="radio" name="question1" id="rate-Q1-1" class="hidden">
+      <label  for="rate-Q1-1" class="far fa-angry" onclick="showButton()"></label>
+      <div class="footer">
+        <span class="text"></span>
+        </div>
+
+        <!-- next button -->
+        <button class="nextstyle" id="next1" type="button" onclick="nextQuestion()"><span id="nextext1">التالي</span></button>
+  </div>
+
+
+  <br>
+<!--Q2-->
+<div class="question" id="question2" style="display:none">
+  <p id="q2"> شكراً لك على تقييمك. هل يمكنك التوضيح أكثر حول الأسباب وراء تقييمك لخدماتنا ؟</p>
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="quality"><label for="quality" class="alignment"  id="quality1">جودة منتجاتنا</label></div>
+  
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="value"><label for="value" class="alignment"  id="value1">قيمة المنتج مقابل المال المدفوع </label></div>
+  
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="availability"><label  for="availability" class="alignment"  id="availability1">توفر المنتجات لدينا </label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="help" ><label for="help" class="alignment" id="help1">موظفينا لديهم المعرفة الكافية لخدمتك</label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="speed" ><label for="speed" class="alignment" id="speed1">سرعة استجابة موظفينا لخدمتك</label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="requirements" ><label for="requirements" class="alignment" id="requirements1">المنتج متناسب مع متطلباتك</label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="aftersales" ><label for="aftersales" class="alignment" id="aftersales1">جودة خدمة ما بعد البيع</label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="maintenance" ><label for="maintenance" class="alignment" id="maintenance1">جودة خدمات الصيانه</label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="delivery" ><label for="delivery" class="alignment" id="delivery1">سرعة توصيل الطلبية</label></div>
+
+  <div class="checkbox-container"><input type="checkbox" name="question2" id="Responsiveness" ><label for="Responsiveness" class="alignment" id="Responsiveness1">الاستجابة للاستفسارات / الشكاوى</label></div>
+
+  <div class="checkbox-container"> <input type="checkbox" name="question2" id="Trustworthiness" ><label for="Trustworthiness" class="alignment" id="Trustworthiness1">المصداقية / الشفافية</label></div>
+
+  <div class="footer">
+    
+    <button class="prevstyle" id="prev1" type="button" onclick="previousQuestion()"><span id="prevtext1">السابق</span></button>
+    <button class="nextstyle" id="next2" type="button" onclick="nextQuestion()"><span id="nextext2">التالي</span></button>
+</div>
+</div>
+
+
+<!--Q3-->
+<div class="question" id="question3" style="display:none">
+  <p id="q3">أخبرنا كيف يمكننا تحسين تجربتك معنا ؟</p>
+    <textarea name="question3"></textarea>
+    <br><br>
+
+
+    <!-- send button -->
+    <input type="submit" id="submit" value="إرسال">
+  </div>
+
+  <!-- questions counter -->
+<div class="counter" id="counter">1 / 3</div>
+  </div>
+
+  <!-- space under the counter -->
+  <div class="space"></div>
+</div>
+</form>
+
+<!-- script to switch questions -->
+<script src="switchq.js"></script>
+
+<!-- script to translate the page -->
+<script src="translationindex.js"></script>
+
+<!-- hide and display next button and counter in q1 page -->
+<script src="hidenextbutton.js"></script>
+
+
+</body>
+</html>

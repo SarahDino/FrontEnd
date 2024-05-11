@@ -1,0 +1,25 @@
+#rate-Q1-5:checked ~ .footer .text::before
+{
+  content:"Love it!!!";
+}
+#rate-Q1-4:checked ~ .footer .text::before
+{
+  content:"Awesome!";
+}
+#rate-Q1-3:checked ~ .footer .text::before
+{
+  content:"Neutral";
+}
+#rate-Q1-2:checked ~ .footer .text::before
+{
+  content:"I don't like it";
+}
+#rate-Q1-1:checked ~ .footer .text::before
+{
+  content:"Hate it!"; 
+}
+
+
+.alignment {
+  text-align: left;
+}
