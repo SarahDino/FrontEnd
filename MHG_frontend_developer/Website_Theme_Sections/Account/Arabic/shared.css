@@ -1,0 +1,278 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/ArbFONTS-DINNextLTArabic-Bold-4.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/alfont_com_AlFont_com_DINNextLTArabic-Medium-2.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/dinnextltarabic-regular.woff.ttf);
+  font-weight: 400;
+}
+html{
+  overflow: hidden;
+}
+*{
+  font-family: "unisans";
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+ padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+   margin-left: 0;
+}
+.buttons-section{
+ background-color: #EDEEF0;
+ width: 326px;
+ height:580px;
+ padding: 0;
+ border-radius: 8px;
+}
+.profile-section{
+  width: 909px;
+}
+.inline,.inline-edit{
+  display: inline-flex;
+  width: 100%;
+}
+/*-----------------hr-----------------*/
+hr {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #C7CDD3!important;
+
+}
+.buttons-section hr{
+width: 97%;
+margin: 0rem 0.4rem;
+}
+.profile-section hr{
+width: 98%;
+margin: 0rem 0.5rem!important;
+}
+.offcanvahr{
+width: 100%!important;
+}
+/*-----------------buttons-----------------*/
+button{
+width: 294px;
+height:56px;
+color: #3F4449!important;
+text-align: right!important;
+border-radius: 8px;
+font-size: 18px!important;
+font-weight: 600!important;
+}
+button:hover , button:active{
+  background-color: #73CDE1;
+  color: #FCFCFC!important;
+}
+.logout svg , .logout {
+  color: #F64C4C!important;
+}
+button svg{
+  margin: 0 2% 0 5%;
+  }
+  /*-----------------profile-----------------*/
+  .prfile-heading{
+    color: #3F4449;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .profile-section section{
+  border: 1px solid #EDEEF0;
+  border-radius: 8px;
+  width: 100%;
+  height:100%;
+}
+.marg-profile{
+  margin:0!important;
+} 
+.inline p , .inline-edit p{
+  color: #3F4449;
+  font-size: 24px;
+  font-weight: 600;
+  }
+.inline-edit a{
+float: left;
+color: #4DB4CC;
+font-size: 24px;
+font-weight: 400;
+}
+.line-div {
+  border-left: 1px solid #C7CDD3;
+  box-sizing: border-box;
+  width: 1px;
+  height: 25px;
+  margin: 10px 5px 0px 5px;
+}
+.info p{
+color: #3F4449;
+font-size: 20px;
+font-weight: 700;
+} 
+.info p span{
+  color:  #5A6065;
+  font-size: 20px;
+  font-weight: 400;
+    }
+    .update{
+      color: #787E83!important;
+      font-size: 16px!important;
+      font-weight: 400!important;
+        }
+
+        .button-profile{
+          display: none;
+        }
+        .name-marg{
+          margin-left: 216px;
+        } 
+        .email-marg{
+          margin-left: 30px;
+        } 
+  /*-----------------offcanva-----------------*/
+  @media (max-width: 991px){
+    .offcanvas-backdrop {
+      height: 100%!important;
+      }
+      .buttons-section{
+        background-color: transparent;
+        width: 0px;
+        height:0px;
+             }
+       .profile-section{
+         width: 700px;
+         height:346px;
+       }
+       .prfile-heading{
+        border: 1px solid #EDEEF0;
+        border-radius: 8px;
+        width: 700px;
+        font-size: 24px;
+        padding: 0 0.8% 1.5% 1%;
+        border-radius: 4px;
+            }
+            .button-profile{
+                display: inline-flex;
+                align-items: baseline;
+                flex-direction: row-reverse;
+                align-content: flex-end;
+                justify-content: flex-end;
+                 }
+                 .hide{
+                  display: none;
+                 }
+                 .navbar-toggler{
+                  width: 30px;
+                  height:30px;
+                  padding: 0!important;
+                  vertical-align:middle;
+                  }
+                  .navbar-toggler-icon {
+                    align-items: center;
+                    display: inline-flex;
+                    background-size: 59%;
+                  margin-right: 3%;
+                  }
+                .navbar-light .navbar-toggler {
+                  margin-right: 665px;
+              }
+              .line-div {
+                height: 22px;
+                margin: 7px 0px 0px 4px;
+            }
+  .inline p , .inline-edit p{
+    color: #3F4449;
+    font-size: 24px;
+    font-weight: 600;
+    }
+  .inline-edit a{
+  font-size: 18px;
+  }
+  .info p{
+  font-size: 18px;
+  } 
+  .info p span{
+    font-size: 18px;
+      }
+      .update{
+        color: #787E83!important;
+        font-size: 14px!important;
+        font-weight: 400!important;
+          }
+
+        .acc{
+          color:#25201f;
+          font-size: 18px;
+          font-weight: 700;
+          margin-top: 15px;
+          margin-bottom: 8px;
+          margin-right: 1.8rem!important;
+        }
+             .logouthr{
+              border-bottom: 1px solid #3b3d3f!important;
+              width: 90%!important;
+              margin: 0rem 1.4rem!important;
+              }
+              span svg {
+                float: left;
+              }
+              .btn{
+                width: 100%;
+              }
+              .offcanvas-end {
+                width: 80%;
+            }
+
+            .btn-close {
+              width: 21px;
+              height: 21px;
+              background-position: center;
+              background-repeat: no-repeat;
+          }
+
+          .offcanvas-header {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin-right: -2rem;
+            margin-top: 10px;
+            background-color: #F64C4C;
+            width: 37px;
+            height: 37px;
+            border-radius:  0px 50px 50px 0px;
+            opacity: 1;
+        }
+        .offcanvas-header {
+          padding: 0;
+      }
+      .offcanvas {
+         bottom: unset;
+         flex-direction: unset;
+         height: 100%;
+    }
+
+    button span  svg {
+    margin: 0 5% 0 6%;
+}
+.name-marg{
+  margin-left: 200px;
+} 
+.email-marg{
+  margin-left: 33px;
+} 
+.hide-heading{
+  display: none;
+}
+    }
+    @media (max-width: 767px){ 
+      .inline {
+        display: block;
+     }}
