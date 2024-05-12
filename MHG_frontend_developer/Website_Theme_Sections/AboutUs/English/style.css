@@ -1,0 +1,412 @@
+/*-----------------global-----------------*/
+@font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Bold.otf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Semi-Bold.otf);
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Book.otf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Regular.otf);
+    font-weight: 400;
+  }
+  *{
+    font-family: "unisans";
+  }
+  body,html{
+    overflow-x: hidden;
+    background: #FCFCFC;
+    }
+    /*-----------------colors-----------------*/
+  :root{
+    --font-primary:#3F4449;
+    --blue: #73CDE1;
+    --secblue:#4DB4CC;
+    --white:#FFF;
+    }
+  /*-----------------header-----------------*/
+  .bg-light {
+    background-color: transparent!important;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link , .navbar-light .navbar-brand , .navbar-light .navbar-nav .nav-link {
+  color: #EDEEF0;
+}
+  /*-----------------first row-----------------*/
+  .mission {
+    background-image: url('web-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+      .mission-content{
+      margin-bottom: 29%;
+    }
+    .our{
+      color: var(--white);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+    }
+    .our span{
+      color: var(--secblue);
+      }
+      .our-mission-text{
+        color: var(--white);
+font-size: 24px;
+text-align: center;
+font-weight: 600;
+      }
+  .login{
+    width: 244px;
+    height: 56px;
+    border-radius: 8px;
+    background: var(--blue);
+    color: var(--white);
+font-size: 24px;
+font-weight: 600;
+  }
+  /*-----------------seconde row-----------------*/
+  .ourclients{
+    color: var(--font-primary);
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .ourclients span{
+    color: var(--blue);
+   }
+   .our-clients-text{
+    color: var(--font-primary);
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 600;
+   }
+   .clients{
+    margin-top: 8%;
+   }
+   .row-right{
+    text-align: end;
+  }
+  /*-----------------img-----------------*/
+  .our-clients-img img{
+    border-radius: 8px;
+    width: 16.25%;
+    height: 85%;
+    background:#EDEEF0;
+    padding: 3% 4%;
+  }
+    .row-right img {
+      width: 596.167px;
+      height: 421.772px;
+      box-shadow: 40px 25px 50px rgb(0 0 0 / 7%);
+      border-radius: 20px 0px 0px 20px;
+      border: none;
+      position: relative;
+      z-index: 2;
+  }
+.vertical {
+  right: 0px;
+height: 399.973px;
+border-radius: 20px 0px;
+}
+.horizontal {
+  right: 200px;
+  height: 285.288px;
+  border-radius: 20px;
+}
+.background-colors{
+  position: relative
+}
+.background-colors div{
+  bottom: 80px;
+  position: absolute;
+  z-index: 0;
+  background:  #D8F5FC;
+  width: 469.162px;
+}
+.row {
+  margin-right: 0;
+}
+
+  /*-----------------media-----------------*/  
+  @media (max-width: 1666px){
+    .row-right img {
+      width: 590px;
+      }
+      .horizontal {
+        right: 180px;
+      }}  
+
+
+      @media (max-width: 1600px){
+    .row-right img {
+      width: 550px;
+      height: 400px;
+      }
+  .vertical {
+     height: 370px;
+    }
+          .horizontal {
+            right: 150px;
+            height: 270px;
+          }
+          .background-colors div{
+            width: 450px;
+          }}  
+
+
+          @media (max-width:1534px){
+            .our-clients-img img{
+              width: 16.1%;
+            }}  
+
+
+            @media (max-width:1500px){
+              .row-right img {
+                width: 500px;
+                height: 390px;
+                }
+            .vertical {
+               height: 360px;
+              }
+                    .horizontal {
+                      right: 133px;
+                    }
+                    .background-colors div{
+                      width: 420px;
+                    }}
+            
+
+                            @media (max-width:1380px){
+                              .row-right img {
+                                width: 440px;
+                                height: 350px;
+                                }
+                            .vertical {
+                               height: 305px;
+                              }
+                              .horizontal {
+                                right: 180px;
+                                height: 230px;
+                              }
+                                    .background-colors div{
+                                      width: 300px;
+                                    }
+                                    .our{
+                                  font-size: 46px;
+                                    }
+                                      .our-mission-text , .login , .our-clients-text{
+                                font-size: 22px;
+                                      }
+                                  .ourclients{
+                                    font-size: 30px;
+                                  }}
+
+
+                                    @media (max-width:1200px){
+                                      .row-right img {
+                                        width: 380px;
+                                        height: 320px;
+                                        }
+                                    .vertical {
+                                       height: 290px;
+                                      }
+                                      .horizontal {
+                                        right: 115px;
+                                        bottom: 10px;
+                                      }
+                                      .background-colors div {
+                                        bottom: 60px;
+                                    }} 
+
+
+                                    @media (max-width:1156px){
+                                      .our-clients-img img{
+                                        width: 16%;
+                                      }}  
+                                      
+                                      @media (max-width:1000px){
+                                        .our-clients-img img{
+                                          width: 15.9%;
+                                        }
+                                        .our{
+                                          font-size: 44px;
+                                            }
+                                              .our-mission-text , .login , .our-clients-text{
+                                        font-size: 20px;
+                                              }
+                                          .ourclients{
+                                            font-size: 28px;
+                                          }}  
+
+                                        
+                                      @media (max-width:1060px){
+                                        .row-right img {
+                                          width: 350px;
+                                          height: 310px;
+                                          }
+                                      .vertical {
+                                         height: 290px;
+                                        }
+                                        .horizontal {
+                                          right: 80px;
+                                        }
+                                        .background-colors div {
+                                          bottom: 40px;
+                                      }}
+
+                                                                              
+                                      @media (max-width:950px){
+                                        .row-right img {
+                                          width: 320px;
+                                          height: 290px;
+                                          }
+                                      .vertical {
+                                         height: 280px;
+                                        }
+                                        .horizontal {
+                                          right:95px;
+                                        }
+                                        .background-colors div {
+                                          bottom: 30px;
+                                          width: 250px;
+                                      }
+                                      .our{
+                                        font-size: 42px;
+                                          }
+                                            .our-mission-text , .login , .our-clients-text{
+                                      font-size: 18px;
+                                            }
+                                        .ourclients{
+                                          font-size: 26px;
+                                        }}
+                                        
+
+                                        @media (max-width:885px){
+                                          .our-clients-img img{
+                                            width: 15.8%;
+                                          }}  
+
+
+                                      @media (max-width:870px){
+                                        .row-right img {
+                                          width: 290px;
+                                          height: 260px;
+                                          }
+                                      .vertical {
+                                         height: 260px;
+                                        }
+                                        .horizontal {
+                                          right:110px;
+                                          height: 185px;
+                                        }
+                                        .background-colors div {
+                                          bottom: 30px;
+                                          width: 210px;
+                                      }
+                                      .our{
+                                        font-size: 40px;
+                                          }
+                                            .our-mission-text , .login , .our-clients-text{
+                                      font-size: 16px;
+                                            }
+                                        .ourclients{
+                                          font-size: 24px;
+                                        }}
+                                      
+
+                                      @media (max-width:800px){
+                                        .row-right img {
+                                          width: 280px;
+                                          height: 250px;
+                                          }
+                                      .vertical {
+                                         height: 240px;
+                                        }
+                                        .horizontal {
+                                          right:90px;
+                                        }
+                                        .background-colors div {
+                                          bottom: 30px;
+                                          width: 210px;
+                                      }}
+
+                                      @media (max-width:796px){
+                                        .our-clients-img img{
+                                          width: 15.7%;
+                                        }}  
+                                      
+  /*-----------------phone-----------------*/  
+  @media (max-width: 767px){
+    .mission {
+      background-image: url('web-background.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-width: 100%;
+ }
+          .row-right{
+          display: none;   
+           }
+           .clients.ms-5 {
+            margin-right: 3rem;
+        }
+        .col-7.our-clients-ontainer{
+          width: 100%!important;
+
+        }
+       .our{
+        font-size: 36px;
+            }
+            .our-mission-text{
+      font-size: 14px;
+            }
+            .login{
+font-size: 16px;
+width: 153px;
+height: 48px;
+}   
+         .login svg{
+          width: 20px;
+          height: 20px;
+          }
+          .ourclients{
+font-size: 24px;
+          }
+           .our-clients-text{
+font-size: 18px;
+           }
+           .our-clients-img img{
+            width: 32.8%;
+            height: 50%;
+            padding: 3% 7%;
+            margin-top: 1%;
+        }}  
+        
+        @media (max-width:649px){
+          .our-clients-img img{
+            width: 32.6%;
+        }} 
+                
+        @media (max-width:508px){
+          .our-clients-img img{
+            width: 32.3%;
+        }} 
+
+        @media (max-width:400px){
+          .our-clients-img img{
+            width: 32%;
+        }} 
+
+        @media (max-width:339px){
+          .our-clients-img img{
+            width: 31.8%;
+        }} 
