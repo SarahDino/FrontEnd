@@ -1,0 +1,271 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Book.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+body{
+  overflow: auto;
+  background: #FCFCFC;
+}
+.inline{
+  display: inline-flex;
+  width: 100%;
+}
+
+/*-----------------colors-----------------*/
+:root{
+  --border-main:#EDEEF0;
+  --font-primary:#3F4449;
+  --blue: #73CDE1;
+  }
+/*-----------------hr-----------------*/
+hr {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--border-main);
+  opacity: 1;
+  margin-top: 0;
+  background-color: transparent;
+  width: 98%;
+  margin: 0.7rem 0.5rem!important;
+}
+hr:not([size]) {
+  height:unset;
+}
+/*-----------------form-----------------*/
+    .Addresses-heading{
+      color: var(--font-primary);
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .border{
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    width: 909px;
+  }
+  .sub-heading{
+    color: var(--font-primary);
+    font-size: 24px;
+    font-weight: 600;
+    }   
+ label{
+  color: var(--font-primary);
+  font-size: 20px;
+  font-weight: 600;
+ }
+ label span{
+  color: #2D97B0;
+  font-size: 16px;
+font-weight: 600;
+ }
+ form input , form select{
+  height: 56px;
+ }
+ select , input , textarea {
+color:var(--font-primary);
+font-size: 20px!important;
+font-weight: 400;
+background-color: #FFF;
+ }
+::placeholder {
+color: #C7CDD3!important;
+font-size: 20px;
+font-weight: 400;
+}
+.or hr  {
+  border-bottom: 1px solid #C7CDD3!important;
+}
+.or span{
+  color: #787E83!important;
+  font-size: 16px;
+  font-weight: 600;
+}
+/*-----------------input width-----------------*/
+input , textarea , select{
+  border-radius: 8px!important;
+  border: 1px solid var(--border-main)!important;
+  background-color: #fff;
+  }
+  .col-6 {
+    flex:unset;
+}
+/*-----------------textarea-----------------*/
+    .textarea-container2 textarea::placeholder{
+      text-align: center!important;
+      transform: translateY(100%);
+      color:#5A6065!important;
+    }
+    #select-from-map{
+      width: 430px;
+      height: 106px;
+      border: 1px dashed #5A6065!important;
+        }
+      #Selected-Address{
+        width: 430px;
+        height: 76px!important;
+        }
+        .textarea-container , .textarea-container2  {
+          position: relative;
+        }
+        .textarea-container2 svg {
+          position: absolute;
+          left: 66%;
+          transform: translateY(-230%);
+        }
+        .textarea-container svg {
+          position: absolute;
+          right: 0%;
+          transform: translateY(60%);
+        }
+        svg{
+          width:40px;
+          height: 40px;
+          padding: 8px;
+          margin-right: 2%;
+        }
+/*-----------------buttons-----------------*/
+.submit{
+  border-radius: 8px;
+  background-color: var(--blue);
+  color:#FFF;
+  font-size: 16px;
+  font-weight: 600;
+  width: 121px ;
+  height: 48px;
+  text-align: center;
+}
+.cancel{
+  background-color: transparent;
+  color: #787E83!important;
+  font-size: 16px;
+  font-weight: 600;  
+  width: 100px;
+  height: 48px;
+}
+/*-----------------radio-----------------*/
+.choose {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: var(--font-primary);
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  align-items: center;
+  margin-left: 0.4%;
+}
+/* Hide the browser's default radio button */
+.choose input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+  /* Create a custom radio button */
+.ratingcheckmark  {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: 0.4%;
+  background-color: transparent;
+	border: 1px solid #C7CDD3;
+  position: absolute;
+  top: 0;
+}
+/* On mouse-over, add a grey background color */
+.choose input:hover ~ .ratingcheckmark {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  }
+  /* When the radio button is checked, add a blue background */
+.choose  input:checked ~ .ratingcheckmark {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  }
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.ratingcheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  }
+  /* Show the indicator (dot/circle) when checked */
+.choose  input:checked ~ .ratingcheckmark:after {
+  display: block;
+  }
+  /* Style the indicator (dot/circle) */
+.choose .ratingcheckmark:after {
+  top: 22%;
+  left: 22.5%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+/*-----------------media-----------------*/
+@media (max-width: 767px){
+  .map-content .inline{
+    display:block;
+  }
+      .Addresses-heading{
+     display: none;      
+    }
+   form input , form select{
+    height: 52px;
+   }
+   select , input , textarea , ::placeholder , label {
+  font-size: 16px!important;
+   }
+      .map-content .col-6 , #select-from-map , #Selected-Address {
+        width: 100%;
+      }
+      .textarea-container label{
+        margin-bottom: 2%;
+      }
+      #select-from-map {
+        height: 81px;
+          }
+        #Selected-Address{
+          height: 85px;
+          }
+        .textarea-container2 svg {
+          left: 38%!important;
+          transform: translateY(-190%)!important;
+        }
+        .textarea-container svg {
+          transform: translateY(140%)!important;
+        }
+  .submit{
+    width: 80%;
+  }
+  .cancel{
+    width: 19%;
+  }
+  .ratingcheckmark  {
+    margin-top: 0.2%;
+  }
+  .choose {
+    margin-bottom: 0px;
+  }}
+
