@@ -1,0 +1,378 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Book.otf);
+  font-weight: 500;
+}
+*{
+  font-family: "unisans";
+}
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 0.9rem!important; 
+  }
+/*-----------------filter-----------------*/
+.dropdown-menu{
+	border: none;
+}
+.title{
+	font-size: 32px;
+    font-weight: 600;
+}
+.page-section{
+	padding: 8rem 0;
+}
+.blog-sidebar-title{
+	font-size: 18px;
+	font-weight: 600;
+	color: #3F4449;
+}
+.blog-form{
+	background-color: #fff; 
+	padding: 0px;
+}
+p {
+    margin-bottom: 0;
+}
+hr {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #818385;
+    width: 93%;
+    margin: 0rem 0.7rem!important;
+}
+.filtertitle{
+	padding: 0;
+	font-size: 18px;
+}
+.active svg , .active span{
+    fill: #73CDE1;
+	color: #73CDE1;
+}
+button .active{
+	border-bottom: none!important;
+}
+.btnreset{
+	background-color: transparent;
+	border:1px solid #787E83;
+	color: #787E83;
+}
+.btnsave{
+	background-color: #C7CDD3;
+	color: white;
+}
+button[data-bs-target="#collapsePrice"]:not([aria-expanded="true"]) ~ hr {
+	display: none;
+  }
+/*-----------------price range-----------------*/
+.wrapper header h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .wrapper header p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .wrapper .price-input {
+    display: flex;
+    width: 100%;
+    margin: 50px 0 50px -10px;
+  }
+  .wrapper .price-input .field {
+    height: 40px;
+  }
+  .wrapper .price-input .field span{
+    margin-left: 15px;
+  }
+  .price-input input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #EDEEF0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 12px;
+  }
+  .wrapper .seperator {
+    width: 40px;
+  }
+  .wrapper .slider {
+    height: 4px;
+    position: relative;
+    background-color: #EDEEF0;
+    border-radius: 5px;
+  }
+  .wrapper .progress {
+    position: absolute;
+    height: 100%;
+    left: 6%;
+    right: 30%;
+    background-color: #73CDE1;
+    border-radius: 5px;
+  }
+  .wrapper .range-input {
+    position: relative;
+  }
+  .wrapper .range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    pointer-events: none;
+    background: none;
+    appearance: none;
+    accent-color: #73CDE1;
+  }
+  .wrapper .range-input input::-webkit-slider-thumb {
+    pointer-events: auto;
+  }
+		  /*-----------------tags-----------------*/
+		  
+		.right {
+			float: right;
+			color: #787E83;
+			font-weight: 400;
+			font-size: 14px;
+			margin-top: 0.5%;
+		}
+		label{
+			color:#3F4449 ;
+			font-weight: 400;
+			font-size: 16px;
+		}
+		/* The container */
+		.tagscontainer {
+			width: 100%;
+		  position: relative;
+		  padding-left: 25px;
+		  margin-bottom: 12px;
+		  cursor: pointer;
+		}
+		/* Hide the default checkbox */
+input[type=checkbox] {
+	visibility: hidden;
+			}
+		/* Create a custom checkbox */
+		.tagscheckmark {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 20px;
+		  width: 20px;
+		  background-color: #ffffff;
+		  border: 1px solid #000000;
+		}
+		/* On mouse-over, add a grey background color */
+		.tagscheckmark:hover {
+		  background-color: #ccc;
+		}
+		
+		/* When the checkbox is checked, add a blue background */
+		.tagscontainer input:checked ~ .tagscheckmark {
+		  background-color: #ffffff;
+		  border: 1px solid #73CDE1;
+		}
+		
+		/* Create the tagscheckmark/indicator (hidden when not checked) */
+		.tagscheckmark:after {
+		  content: "";
+		  position: absolute;
+		  display: none;
+		  color: #73CDE1;
+		}
+		/* Show the tagscheckmark when checked */
+		.tagscontainer input:checked ~ .tagscheckmark:after {
+		  display: block;
+		}
+		/* Style the tagscheckmark/indicator */
+		.tagscontainer .tagscheckmark:after {
+		  left: 7px;
+		  top: 4px;
+		  width: 5px;
+		  height: 10px;
+		  border: solid #73CDE1;
+		  border-width: 0 3px 3px 0;
+		  -webkit-transform: rotate(45deg);
+		  -ms-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		}
+		  /*-----------------Ratings-----------------*/
+		  .script img{
+			margin-bottom: 3%;
+		}
+/* The container */
+.ratingcontainer {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .ratingcontainer input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .ratingcheckmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin-top: 1%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .ratingcontainer:hover input ~ .ratingcheckmark {
+	background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .ratingcontainer input:checked ~ .ratingcheckmark {
+	background-color: white;
+	border: 1px solid #73CDE1;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .ratingcheckmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .ratingcontainer input:checked ~ .ratingcheckmark:after {
+	display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .ratingcontainer .ratingcheckmark:after {
+	   top: 5px;
+	  left:5px;
+	  width: 8px;
+	  height: 8px;
+	  border-radius: 50%;
+	  background: #73CDE1;
+  }
+  
+		  /*----------------sub Category-----------------*/
+
+		.sub-font-weight{
+			font-weight: 400;
+			font-size: 18px;
+		}
+		.ViewMore{
+			color:#73CDE1;
+			border: none;
+			background: transparent;
+			text-align: left;
+		}
+		.hrViewMore {
+			text-align: center;
+			border: none;
+			border-bottom: 1px solid #818385;
+			width: 100%;
+			margin: 0rem!important;
+		}
+
+		  /*----------------off vanva-----------------*/
+		  
+
+		  @media (max-width: 991px){
+			.title {
+					 display: none;
+					}
+					.border{
+					border: none!important;}
+					.page-section{
+						padding: 0;
+					}
+					.offcanvas{
+						overflow-y: auto;
+						min-height: 100%;
+					}}
+				   
+
+				   @media (max-width: 550px){
+							.offcanvas{
+								width: 70%;
+							}}
+
+
+							@media (max-width: 360px){
+								.sub-font-weight , .filtertitle , .blog-sidebar-title{
+									font-size: 16px;
+								}		.right {
+									font-size: 12px;
+								}
+								label , .script , .price-input input{
+									font-size: 14px;
+						
+								}
+						 .wrapper header h2 {
+						font-size: 22px;
+									  }
+							  .wrapper header p {
+							font-size: 13px;
+								  }
+								.title{
+					font-size: 30px;
+					}
+								.mark {
+									top: 0;
+									left: 0;
+									height: 18px;
+									width: 18px;
+								}
+								.script .mark:after {
+									left: 3px;
+									bottom: 3px;
+									border-width: 5px 5px 5px 5px;
+								}
+								.script {
+									padding-left: 25px;
+											}}
+							   
+																																																							
+
+
+
+
+
+
+
+
+
+
+
+
+		

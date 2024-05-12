@@ -1,0 +1,324 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Book.otf);
+  font-weight: 500;
+}
+*{
+  font-family: "unisans";
+}
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 0.9rem!important; 
+  }
+  .content-container{
+    margin-top: 1%;
+  }
+  .full-page{
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  .product-content {
+    width: 49%;
+    flex-direction: column;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*-----------------breadcrumb-----------------*/
+.breadcrumb-item a{
+  color: #1F2225!important;
+}
+.breadcrumb-item.active{
+  color: #4DB4CC!important;
+}
+/*-----------------product img-----------------*/
+.images-container{
+    width: 39%!important;
+    display: inline-block!important;
+    padding-right: 1%!important;
+    position: relative!important;
+  }
+  #thumbnail-carousel #thumbnail-carousel-track #thumbnail-carousel-list .is-active img{
+    opacity: 1;
+  }
+  #thumbnail-carousel #thumbnail-carousel-track #thumbnail-carousel-list img{
+    opacity: 0.5;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  #image-carousel .splide__slide img {
+    width: 676px;
+    height: 518px;
+    object-fit:fill;
+    border-radius: 5px;
+  }
+  #thumbnail-carousel .splide__slide img {
+    width: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .is-active , .splide__slide{
+    border: none!important;
+  }
+  #thumbnail-carousel .splide__track{
+    width: 676px;
+    height: 518px;
+    padding-top:3%;
+  }
+  /*----------------- inline -----------------*/
+.inline{
+  padding-bottom: 2%;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+
+}
+  /*-----------------devider-----------------*/
+  .line-div {
+    position: relative;
+    border-right: 1px solid #c7cdd3;
+    box-sizing: border-box;
+    width: 1px;
+    height: 20px;
+    margin: 0 10px;
+}
+/*----------------- logo - name -----------------*/
+.tiny-logo{
+  width: 52px;
+  height: 52px;
+  border: 1px solid #EDEEF0;
+  margin-right: 1%;
+}
+#brand-name{
+  color:#73CDE1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.arrow{
+  width: 21px;
+  height: 21px;
+}
+#product-name{
+    color: #3F4449;
+    font-size: 24px;
+    font-weight: 600;
+    }
+/*----------------- price -----------------*/
+.price{
+  color: #1F2225;
+  font-size: 32px;
+  font-weight: 700;
+  padding-right: 1%;
+  }
+  .vat{
+    color: #1F2225;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    bottom: 0;
+    margin-bottom: 3px;
+      }  
+  /*----------------- in stock -----------------*/
+  .instock , .Purchased , .num , .Purchased{
+  color:#3F4449;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 5px;
+}
+.num{
+color: #73CDE1;
+}
+  /*-----------------rating-----------------*/
+  .rating{
+color: #3F4449;
+font-size: 18px;
+font-weight: 300;
+margin: 0 10px;
+  }
+  .share{
+color:#3F4449;
+font-size: 18px;
+font-weight: 400;
+margin: 0 10px;
+  }
+/*-----------------tags-----------------*/
+  .tag{
+    color:#73CDE1;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .tag:hover{
+    color:#3d96aa;
+  }
+  .tag:visited{
+    color:#3d96aa;
+  }
+  /*-----------------chose a color-----------------*/
+  .colorchoices img{
+    width: 58px;
+    }
+		  /*-----------------chose size-----------------*/
+  /* The container */
+  .ratingcontainer {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    }
+    
+    /* Hide the browser's default radio button */
+    .ratingcontainer input {
+    opacity: 0;
+    cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .ratingcheckmark {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid black;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .ratingcontainer:hover input ~ .ratingcheckmark {
+    background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .ratingcontainer input:checked ~ .ratingcheckmark {
+    background-color: white;
+    border: 1px solid #73CDE1;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .ratingcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .ratingcontainer input:checked ~ .ratingcheckmark:after {
+    display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+    .ratingcontainer .ratingcheckmark:after {
+      top: 5px;
+      left:5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #73CDE1;
+    }
+    ul li {
+      list-style: none;
+    }
+    ul{
+      padding: 0!important;
+    }
+    /*----------------- quantity counter -----------------*/
+    .quantity-counter {
+      display: flex;
+      flex-direction: column;
+      width: 40px;}
+      .value {
+        border: 1px solid #adadad;
+        border-radius: 3px;
+        margin: 2px 0;
+        padding: 4px;
+        text-align: center;
+      }
+      .increment,
+      .decrement {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 3px;
+        background: rgba(teal, 0.7);
+        color: #fff;
+        height: 30px;
+      } 
+/*----------------- buttons -----------------*/
+.Add-to-List{
+transition:background-color .25s ease-out,color .25s ease-out;
+color: #FFF;
+text-align: center;
+font-size: 1.4rem;
+font-weight: 600;
+border-radius: 12.252rem;
+border: none;
+width: 20%;
+cursor: pointer;
+background-image:linear-gradient(to right,#03ADD3,#73CDE1,#73CDE1,#03ADD3);
+background-size:300% 100%;
+-moz-transition:all .4s ease-in-out;
+-o-transition:all .4s ease-in-out;
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out;
+padding-top: 1%;
+padding-bottom: 1%;
+    }
+    .Add-to-List:hover {
+        background-position:100% 0;
+        -moz-transition:all .4s ease-in-out;
+        -o-transition:all .4s ease-in-out;
+        -webkit-transition:all .4s ease-in-out;
+        transition:all .4s ease-in-out;
+    }
+    .Lost-a-Sale {
+        transition:background-color .25s ease-out,color .25s ease-out;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-radius: 12.252rem;
+        border: none;
+        width: 20%;
+        cursor: pointer;
+background-image:linear-gradient(to right,#D30303,#E17A73,#E17A73,#D30303);
+background-size:300% 100%;
+-moz-transition:all .4s ease-in-out;
+-o-transition:all .4s ease-in-out;
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out;
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 0.5%;
+padding-right: 0.5%;
+    }
+    .Lost-a-Sale:hover {
+        background-position:100% 0;
+        -moz-transition:all .4s ease-in-out;
+        -o-transition:all .4s ease-in-out;
+        -webkit-transition:all .4s ease-in-out;
+        transition:all .4s ease-in-out;
+    }
+    .buttons-container button{
+        margin-right: 5%;
+margin-top: 1%;
+    }
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+    <meta charset="UTF-8">
+    <!--font awesome-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+        <!-- syles -->
+        <link rel="stylesheet" href="shared.css">
+
+    
+  </head>
+<body>
+
+
+    <nav class="navbar navbar-light navbar-expand-lg ">
+        <!-- off canva on phone view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+  
+  
+          <div>
+
+
+
+        <!-- filter body -->
+
+        <section class="page-section">
+          <div class="container">
+            <h2 class="title"><b>الصحيه</b></h2>
+      
+            <div class="row">
+              <div class="col-lg-3 blog-form border border-1 rounded-3">
+      <p class="filtertitle border-bottom py-2 px-3">تصفية المنتجات</p>
+      
+      
+              <!-- price -->
+                <p>
+                  <button class="btn blog-sidebar-title p-3 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+                    <span>السعر</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"  viewBox="0 0 448 512"><style>svg{fill:#3f4449; margin-top:4px;}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                  </button>
+                  <hr>
+                </p>
+      
+                
+                <div class="collapse" id="collapsePrice">
+                    <ul class="dropdown-menu card card-body" aria-labelledby="navbarDropdown">
+                      <li>   <div class="wrapper">
+                       
+                        <div class="slider-container">
+                          <div class="slider">
+                          <div class="progress"></div>
+                          </div>
+                          </div>                  <div class="range-input">
+                          <input type="range" min="200" max="5000" value="300" class="min-range" />
+                          <input
+                            type="range"
+                            min="200"
+                            max="5000"
+                            value="3500"
+                            class="max-range"
+                          />
+                        </div>
+                        <div class="price-input">
+                          <div class="field">
+                            <span>من :</span>
+                            <input type="number" value="300" class="min-input" />
+                          </div>
+                          <div class="seperator"></div>
+                          <div class="field">
+                            <span>الى :</span>
+                            <input type="number" value="3500" class="max-input" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    </ul>  
+                </div>
+      
+      
+              <!-- Tags -->
+                <p>
+                  <button class="btn blog-sidebar-title p-3 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTags" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+                    <span>الوسوم</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#3f4449}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                  </button>
+                              <hr>
+                </p>
+                <div class="collapse" id="collapseTags">
+                    <ul class="dropdown-menu card card-body" aria-labelledby="navbarDropdown">
+
+                      <li> <label class="tagscontainer">
+                        المنزل والفنادق
+                        <span class="right">( 250 )</span>
+                        <input type="checkbox">
+                        <span class="tagscheckmark"></span>
+                      </label></li>
+      
+                      <li> <label class="tagscontainer">
+                        المساحات الخارجيه
+                        <span class="right">( 250 )</span>
+                        <input type="checkbox">
+                        <span class="tagscheckmark"></span>
+                      </label></li>
+      
+                      <li> <label class="tagscontainer">
+                        المكاتب 
+                        <span class="right">( 250 )</span>
+                        <input type="checkbox">
+                        <span class="tagscheckmark"></span>
+                      </label></li>
+      
+                      <li> <label class="tagscontainer">
+                        المنزل والفنادق
+                        <span class="right">( 250 )</span>
+                          <input type="checkbox">
+                        <span class="tagscheckmark"></span>
+                      </label></li>
+      
+                </ul>  
+                </div>
+      
+      
+      
+      
+      
+      
+              <!-- Ratings -->
+      
+                <p>
+                  <button class="btn blog-sidebar-title p-3 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRatings" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+                    <span>التقييم</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#3f4449}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                  </button>
+                              <hr>
+                </p>
+                <div class="collapse" id="collapseRatings">
+                  <ul class="dropdown-menu card card-body" aria-labelledby="navbarDropdown">
+
+                    
+                    <li>
+                      <label class="ratingcontainer">
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+      
+                        
+                      <span class="right">( 250 )</span>
+                        <input type="radio" name="radio">
+                        <span class="ratingcheckmark"></span>
+                      </label>
+                      </li>
+      
+                      <li>
+                        <label class="ratingcontainer">
+                          <img src="star-yellow.png" alt="star" />
+                          <img src="star-yellow.png" alt="star" />
+                          <img src="star-yellow.png" alt="star" />
+                          <img src="star-yellow.png" alt="star" />
+                          <img src="star-gray.png" alt="star" />
+        
+                          
+                          <span class="right">( 250 )</span>
+                          <input type="radio" name="radio">
+                          <span class="ratingcheckmark"></span>
+                        </label>
+                        </li>
+      
+      
+                    <li>
+                      <label class="ratingcontainer">
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-gray.png" alt="star" />
+                        <img src="star-gray.png" alt="star" />
+      
+                        
+                        <span class="right">( 250 )</span>
+                        <input type="radio" name="radio">
+                        <span class="ratingcheckmark"></span>
+                      </label>
+                      </li>
+      
+      
+                    <li>
+                      <label class="ratingcontainer">
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-yellow.png" alt="star" />
+                        <img src="star-gray.png" alt="star" />
+                        <img src="star-gray.png" alt="star" />
+                        <img src="star-gray.png" alt="star" />
+      
+                        
+                        <span class="right">( 250 )</span>
+                        <input type="radio" name="radio">
+                        <span class="ratingcheckmark"></span>
+                      </label>
+                      </li>
+      
+                      <li>
+                        <label class="ratingcontainer">
+                          <img src="star-yellow.png" alt="star" />
+                          <img src="star-gray.png" alt="star" />
+                          <img src="star-gray.png" alt="star" />
+                          <img src="star-gray.png" alt="star" />
+                          <img src="star-gray.png" alt="star" />
+        
+                          
+                          <span class="right">( 250 )</span>
+                          <input type="radio" name="radio">
+                          <span class="ratingcheckmark"></span>
+                        </label>
+                        </li>
+        
+              </ul>  
+              </div>
+      
+      
+      
+      
+      
+      
+                      <!-- Category -->
+      
+      
+                <p>
+                  <button class="btn blog-sidebar-title p-3 d-flex justify-content-between w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+                    <span>القسم</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#3f4449}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                  </button>
+                              <hr>
+                </p>
+                <div class="collapse" id="collapseCategory">
+                  <ul class="dropdown-menu card card-body" aria-labelledby="navbarDropdown">
+      
+      
+      
+                                    <!--sub 1 Category -->
+      
+                                    <p>
+                                      <button class="btn blog-sidebar-title px-0 d-flex justify-content-between w-100 sub-font-weight" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1subCategory" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+                                        <span>مفاتيح وقابس</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#3f4449}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                                      </button>
+                                    </p>
+                                    <div class="collapse" id="collapse1subCategory">
+                                      <ul class="dropdown-menu px-0 card card-body" aria-labelledby="navbarDropdown">
+                
+                
+                
+                                        <li> <label class="tagscontainer">
+                                          المنزل والفنادق
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المساحات الخارجيه
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المكاتب 
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المنزل والفنادق
+                                          <span class="right">( 250 )</span>
+                                            <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <button class="ViewMore my-2" type="button">
+                                          <span>المزيد</span>
+                                        </button>
+                
+                                      <hr class="hrViewMore">
+                
+                                      </ul>
+                                      </div>
+                         
+                      
+      
+      
+            <!--sub 2 Category -->
+      
+          <p>
+            <button class="btn blog-sidebar-title  px-0 py-2 d-flex justify-content-between w-100 sub-font-weight mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2subCategory" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+              <span>اناره داخليه</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#3f4449}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+            </button>
+          </p>
+          <div class="collapse" id="collapse2subCategory">
+            <ul class="dropdown-menu  px-0 card card-body" aria-labelledby="navbarDropdown">
+
+
+
+                                        <li> <label class="tagscontainer">
+                                          المنزل والفنادق
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المساحات الخارجيه
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المكاتب 
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المنزل والفنادق
+                                          <span class="right">( 250 )</span>
+                                            <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <button class="ViewMore my-2" type="button">
+                                          <span>المزيد</span>
+                                        </button>
+                
+                                      <hr class="hrViewMore">
+                
+                                      </ul>
+                                      </div>
+      
+      
+      
+      
+      
+      
+            <!--sub 3 Category -->
+      
+      <p>
+        <button class="btn blog-sidebar-title px-0 py-2 d-flex justify-content-between w-100 sub-font-weight mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3subCategory" aria-expanded="false" aria-controls="collapseExample" onclick="changeIcon(this)">
+          <span>اناره خارجيه</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#3f4449}</style><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7L86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </button>
+      </p>
+      <div class="collapse" id="collapse3subCategory">
+        <ul class="dropdown-menu px-0 card card-body" aria-labelledby="navbarDropdown">
+
+
+                                        <li> <label class="tagscontainer">
+                                          المنزل والفنادق
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المساحات الخارجيه
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المكاتب 
+                                          <span class="right">( 250 )</span>
+                                          <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <li> <label class="tagscontainer">
+                                          المنزل والفنادق
+                                          <span class="right">( 250 )</span>
+                                            <input type="checkbox">
+                                          <span class="tagscheckmark"></span>
+                                        </label></li>
+                        
+                                        <button class="ViewMore my-2" type="button">
+                                          <span>المزيد</span>
+                                        </button>
+                
+                                      <hr class="hrViewMore">
+                
+                                      </ul>
+                                      </div>
+      </ul> 
+              </div>
+      
+      
+      
+      
+      
+      
+      
+      
+                    <!--buttons-->
+      
+                <br><br><br><br>
+                <div class="d-grid gap-2 col-11 mx-auto">
+              <button type="button" class="btn btnsave">Save & Apply</button>
+              <br>
+              <button type="button" class="btn btnreset">Re-set Filters</button>
+              <br>
+            </div>
+            </div></div></div></section>
+      
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+    </nav>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="arrowscript.js"></script>
+    <script src="range.js"></script>
+
+    
+  </body>
+
+</html>
+
+
+
