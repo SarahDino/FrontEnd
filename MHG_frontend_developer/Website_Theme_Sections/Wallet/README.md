@@ -1,4 +1,4 @@
-# About Us
+# Wallet
 
 
 ## Arabic Version:
