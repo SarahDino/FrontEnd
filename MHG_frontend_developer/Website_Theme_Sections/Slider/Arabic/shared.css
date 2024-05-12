@@ -1,0 +1,368 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/alfont_com_AlFont_com_DINNextLTArabic-Medium-2.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/dinnextltarabic-regular.woff.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/din-next-lt-arabic-light.ttf);
+  font-weight: 500;
+}
+*{
+  font-family: "unisans";
+}
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 0.9rem!important; 
+  }
+
+
+/*-----------------breadcrumb-----------------*/
+        .breadcrumb-item a{
+          color: #1F2225!important;
+        }
+        .breadcrumb-item.active{
+          color: #4DB4CC!important;
+        }
+        @media (max-width: 1288px){
+          .breadcrumb-item{
+            font-size: 1.4rem!important;
+          }}
+          @media (max-width: 700px){
+            .breadcrumb-item{
+              font-size: 1.2rem!important;
+            }}
+            @media (max-width: 572px){
+              .breadcrumb-item{
+                font-size: 1.1rem!important;
+              }}
+              @media (max-width: 572px){
+                .breadcrumb-item{
+                  font-size: 1rem!important;
+                }}
+                @media (max-width: 572px){
+                  .breadcrumb{
+                      margin: 1.5rem!important;
+                  }}
+/*-----------------end breadcrumb-----------------*/
+
+
+/*-----------------arrow-----------------*/
+  .splide__arrow svg {
+    fill: #3F4449!important;
+  }
+
+  .splide__arrow {
+    background-color: rgba(255, 255, 255, 0.212)!important;
+    border: 1px solid #C7CDD3;
+  }
+  .splide__arrow:hover {
+    background-color: rgb(255, 255, 255)!important;
+  }
+  .products-category .splide__arrow svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+.products-category .splide__arrow {
+  width: 3em;
+  height: 3em;
+  }
+  .products-category .splide__arrow--prev , .products-category .splide__arrow--next{
+    bottom: 73%!important;
+    top: auto!important;
+}
+.splide__arrow--prev {
+  left: 4%;
+}
+.splide__arrow--next {
+  right: 88%;
+}
+
+
+@media (max-width: 1540px){
+  .splide__arrow--prev {
+    left: 5%;
+  }
+  .splide__arrow--next {
+    right: 85%;
+  }
+}
+
+
+@media (max-width: 1288px){
+  .splide__arrow--prev {
+    left: 6%;
+  }
+  .splide__arrow--next {
+    right: 82%;
+  }
+  .products-category .splide__arrow svg {
+    height: 1.3em;
+    width: 1.3em;
+}
+.products-category .splide__arrow {
+  width: 2.9em;
+  height: 2.9em;
+  }
+}
+@media (max-width: 1240px){
+  .products-category .splide__arrow svg {
+    height: 1.1em;
+    width:  1.1em;
+}
+.products-category .splide__arrow {
+  width: 2.8em;
+  height: 2.8em;
+  }}
+  @media (max-width: 1180px){
+    .splide__arrow--prev {
+      left: 7%;
+    }
+    .splide__arrow--next {
+      right: 80%;
+    }
+  }  
+  @media (max-width: 1040px){
+    .splide__arrow--next {
+      right: 78%;
+    }}
+  @media (max-width: 890px){
+    .products-category .splide__arrow svg {
+      height: 1em;
+      width:  1em;
+  }
+  .products-category .splide__arrow {
+    width: 2.6em;
+    height: 2.6em;
+    }
+  }
+  @media (max-width: 630px){
+    .splide__arrow--prev {
+      left: 7%;
+    }
+    .splide__arrow--next {
+      right: 74%;
+    }
+    .products-category .splide__arrow svg {
+      height: 1em;
+      width:  1em;
+  }
+  .products-category .splide__arrow {
+    width: 2.5em;
+    height: 2.5em;
+    }
+    .products-category .splide__arrow--prev , .products-category .splide__arrow--next{
+      bottom: 71%!important;
+  }
+  }
+  @media (max-width: 572px){
+    .products-category .splide__arrow svg {
+      height: 0.9em;
+      width:  0.9em;
+  }
+  .products-category .splide__arrow {
+    width: 2.3em;
+    height: 2.3em;
+    }
+    .products-category .splide__arrow--prev , .products-category .splide__arrow--next{
+      bottom: 71%!important;
+  }
+  }
+  @media (max-width: 500px){
+    .splide__arrow--prev {
+      left: 7%;
+    }
+    .splide__arrow--next {
+      right: 70%;
+    }
+    .products-category .splide__arrow svg {
+      height: 0.9em;
+      width:  0.9em;
+  }
+  .products-category .splide__arrow {
+    width: 2.3em;
+    height: 2.3em;
+    }
+    .products-category .splide__arrow--prev , .products-category .splide__arrow--next{
+      bottom: 71%!important;
+  }}
+
+  @media (max-width: 430px){
+
+    .products-category .splide__arrow svg {
+      height: 0.8em;
+      width:  0.8em;
+  }
+  .products-category .splide__arrow {
+    width: 2em;
+    height: 2em;
+    }
+    .products-category .splide__arrow--prev , .products-category .splide__arrow--next{
+      bottom: 72%!important;
+  }}
+/*-----------------end arrow-----------------*/
+
+
+/*-----------------products category-----------------*/
+     .gray{
+      background-color: #F7F7FA;
+     }
+      .products-category{
+        position: relative;
+          }
+          .products-category-header{
+            font-size: 2.1rem;
+            font-weight: 700;
+          }
+      .card{
+        background-color: transparent;
+        border:none;
+      }
+      .card-title {
+        color: #3F4449;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 10%;
+      } 
+      .card-quantity {
+        color: #787E83;
+      } 
+      .container img{
+        width:100px;
+      }
+      .imagebackground{
+border-radius: 8px;
+background-color: #D8F5FC;
+width: 90%;
+height: 60%;
+      }
+      @media (max-width: 1240px){
+        .products-category-header{
+          font-size: 1.8rem;
+        }}
+@media (min-width: 1200px){
+     .container, .container-lg, .container-md, .container-sm, .container-xl {
+         max-width: unset;
+     }}
+     @media (min-width: 992px){
+     .container, .container-lg, .container-md, .container-sm {
+       max-width: unset;
+     }}
+     @media (min-width: 768px){
+     .container, .container-md, .container-sm {
+       max-width: unset;
+       }}
+       @media (max-width: 700px){
+        .products-category-header{
+          font-size: 1.5rem;
+        }
+        .card-title {
+          font-size: 1.1rem;
+        } 
+        .card-quantity {
+          font-size: 0.8rem;
+        }
+      }
+      @media (max-width: 572px){
+        .products-category-header{
+          font-size: 1.4rem;
+        }
+        .card-title {
+          font-size: 1rem;
+        } 
+        .card-quantity {
+          font-size: 0.7rem;
+        }
+        .Related-Products{
+          padding-right: 1.5rem!important;
+          padding-left: 1.5rem!important;  
+        }}
+       @media (min-width: 576px){
+      .container, .container-sm {
+       max-width: unset;
+         }}
+         @media (max-width: 430px){
+          .products-category-header{
+            font-size: 1.1rem;
+          }
+          .card-title {
+            font-size: 0.9rem;
+          }}
+     @media (max-width: 370px){
+      .imagebackground{
+        height: 55%;
+              }
+              .container img{
+                width:80px;
+              }}
+              @media (max-width: 340px){
+                .imagebackground{
+                  height: 50%;
+                        }
+                        .container img{
+                          width:60px;
+                        }}
+                        
+                        @media (max-width: 335px){
+                          .imagebackground{
+                            height: 45%;
+                                  }}
+
+                                  
+/*-----------------pagination-----------------*/    
+.splide__pagination__page {
+  background: transparent;
+  border: 1px solid #C7CDD3;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin: 0px 15px;
+  transition: transform .2s linear;
+  width: 15px;
+}
+.splide__pagination__page.is-active {
+  background: #73CDE1;
+  border-radius: 9px;
+  height: 15px;
+  width: 40px;
+  border:none;
+  /* Expand from the right */
+  transform-origin: right center;
+  transform: scaleX(2);
+}
+/* Move the active page to the left if it's in the middle */
+.splide__pagination__page.is-active:nth-child(odd) {
+  transform-origin: left center;
+  transform: scaleX(1);
+}
+@media (max-width: 950px){
+  .splide__pagination__page {
+    height: 13px;
+    width: 13px;
+  }
+  .splide__pagination__page.is-active {
+    height: 13px;
+    width: 40px;
+  }}
+  @media (max-width: 430px){
+    .splide__pagination__page {
+      height: 11px;
+      width: 11px;
+    }
+    .splide__pagination__page.is-active {
+      height: 11px;
+      width: 30px;
+    }}
+/*-----------------end pagination-----------------*/
