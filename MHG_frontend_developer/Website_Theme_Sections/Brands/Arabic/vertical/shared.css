@@ -1,0 +1,89 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/ArbFONTS-DINNextLTArabic-Bold-4.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/alfont_com_AlFont_com_DINNextLTArabic-Medium-2.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/dinnextltarabic-regular.woff.ttf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+.content-container{
+  width: 326px;
+}
+.inline {
+  display: inline-flex;
+}
+/*-----------------colors-----------------*/
+:root{
+  --border-main:#EDEEF0;
+  --font-primary:#3F4449;
+  --blue: #73CDE1;
+  }
+/*-----------------img-----------------*/
+.content-container img{
+width:166px;
+height:136px;
+background:#D8F5FC;
+border-radius: 8px;
+padding: 24.5px 39.315px 24.5px 40.315px;
+}
+/*-----------------content-----------------*/
+.content-container {
+  border-radius: 8px;
+  border: 1px solid var(--border-main);  
+}
+.brand{
+  color: var(--font-primary);
+  font-size: 18px;
+  font-weight: 500;
+}
+.items{
+  color: #787E83;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*-----------------buttons-----------------*/
+.add{
+border-radius: 8px;
+background: var(--blue);
+color: #FFF;
+font-size: 16px;
+font-weight: 500;
+width: 294px;
+height: 48px;
+}
+/*-----------------media-----------------*/
+@media (max-width: 767px){
+  .content-container{
+    width: 191px;
+  }
+  .content-container img{
+width: 111px;
+height: 111px;
+padding: 18px 18px 17px 17px;
+  }
+  .brand{
+    font-size: 16px;
+  }
+  .items{
+    font-size: 14px;
+  }
+  .add{
+  font-size: 14px;
+  width: 159px;
+  height: 40px;
+  }
+  .add svg{
+    width: 18px;
+    height: 18px;
+    }}

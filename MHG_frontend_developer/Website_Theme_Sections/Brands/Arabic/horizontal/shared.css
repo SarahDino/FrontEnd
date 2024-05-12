@@ -1,0 +1,107 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/ArbFONTS-DINNextLTArabic-Bold-4.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/alfont_com_AlFont_com_DINNextLTArabic-Medium-2.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/dinnextltarabic-regular.woff.ttf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+.content-container{
+  width: 443px;
+}
+.inline {
+  display: inline-flex;
+  position: relative;
+}
+/*-----------------colors-----------------*/
+:root{
+  --border-main:#EDEEF0;
+  --font-primary:#3F4449;
+  --blue: #73CDE1;
+  }
+/*-----------------img-----------------*/
+.product img{
+width:136px;
+height:136px;
+background:#D8F5FC;
+border-radius: 8px;
+padding: 25px 24px 25px 24px;
+}
+/*-----------------content-----------------*/
+.row {
+  flex-wrap: unset;
+  margin: 3% 0% 3% 0%;
+}
+.content-container{
+  border-radius: 8px;
+  border: 1px solid var(--border-main);  
+}
+.brand{
+  color: var(--font-primary);
+  font-size: 18px;
+  font-weight: 500;
+}
+.items{
+  color: #787E83;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+.product-content.col-7 {
+  width: 58%;
+}
+/*-----------------buttons-----------------*/
+.add{
+border-radius: 8px;
+background: var(--blue);
+color: #FFF;
+font-size: 16px;
+font-weight: 500;
+width: 180px;
+height: 48px;
+margin-right: 30%;
+}
+/*-----------------media-----------------*/
+@media (max-width: 767px){
+.content-container{
+  width: 398px;
+}
+.product img{
+width: 111px;
+height: 111px;
+padding: 18px 18px 17px 17px;
+}
+.row {
+  margin: 3% 0% 3% 1%;
+}
+.product-content.col-7 {
+  width: 58%;
+}
+.add{
+width: 164px;
+height: 40px;
+margin-right: 28%;
+font-size: 14px;
+}
+.add svg{
+  width: 18px;
+  height: 18px;
+  margin-bottom: 0.3%!important;
+  }
+  .add.mt-3{
+   margin-top: 3%!important;
+  }
+  .product-content.mt-4{
+    margin-top: 4.5%!important;
+  }}
