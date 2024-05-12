@@ -1,0 +1,165 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Book.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+body{
+  overflow-x: hidden;
+}
+.buttons-section{
+ background-color: #EDEEF0;
+ padding: 0;
+ border-radius: 8px;
+}
+
+/*-----------------buttons-----------------*/
+button{
+height:56px;
+color: #3F4449!important;
+text-align: left!important;
+border-radius: 8px;
+font-size: 18px!important;
+font-weight: 600!important;
+}
+button:hover , button:active{
+  background-color: #73CDE1;
+  color: #FCFCFC!important;
+}
+
+/*-----------------page-----------------*/
+.privacy.col-9 {
+  width: 77%;
+}
+.buttons-section.col{
+  width: 294px;
+  height: 504px;
+  flex: unset;
+}
+.col-1 {
+  width: 5%;
+  margin-top: 0.5%;
+  padding-right: 0;
+}
+
+  .page-heading{
+    color: #2D97B0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+.sub-heading{
+  color:  #3F4449;
+font-size: 32px;
+font-weight: 600;
+}
+.content{
+  color: #3F4449;
+  font-size: 24px;
+  font-weight: 400;
+}
+  /*-----------------offcanva-----------------*/
+ 
+  @media (max-width: 1672px){
+    .privacy.col-9 {
+      width: 75%;
+    }} 
+
+    @media (max-width: 1535px){
+      .privacy.col-9 {
+        width: 72%;
+      }} 
+
+      @media (max-width: 1368px){
+        .privacy.col-9 {
+          width: 69%;
+        }} 
+  
+
+        @media (max-width: 1234px){
+          .privacy.col-9 {
+            width: 63%;
+          }} 
+
+          @media (max-width: 1030px){
+            .privacy.col-9 {
+              width: 60%;
+            }
+            .col-1 {
+              width: 5.5%;
+          }} 
+
+            @media (max-width: 950px){
+              .buttons-section.col{
+                width: 250px;
+              }} 
+
+              @media (max-width: 840px){
+                .privacy.col-9 {
+                  width: 57%;
+                }
+                .col-1 {
+                  width: 7%;
+              }} 
+
+                @media (max-width: 781px){
+                  .privacy.col-9 {
+                    width: 55%;
+                  }}
+
+
+  @media (max-width:767px){
+    .buttons-section{
+display: none;
+    }
+    .privacy.col-9 {
+      width: 100%;
+      margin-left: 1rem;
+    }
+  .sub-heading{
+    font-size: 24px;
+  }
+  .content{
+    font-size: 18px;
+  }                
+  .col-1 {
+    width: 5%;
+    margin-top: 0;
+}} 
+
+@media (max-width: 560px){
+  .col-1 {
+    width: 6%;
+}}
+
+@media (max-width: 470px){
+  .col-1 {
+    width: 7%;
+}} 
+
+@media (max-width: 470px){
+  .col-1 {
+    width: 8%;
+}} 
+
+@media (max-width: 350px){
+  .col-1 {
+    width: 9%;
+}} 

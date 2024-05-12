@@ -1,0 +1,161 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/ArbFONTS-DINNextLTArabic-Bold-4.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/alfont_com_AlFont_com_DINNextLTArabic-Medium-2.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/dinnextltarabic-regular.woff.ttf);
+  font-weight: 400;
+}
+
+*{
+  font-family: "unisans";
+}
+body{
+  overflow-x: hidden;
+}
+.buttons-section{
+ background-color: #EDEEF0;
+ padding: 0;
+ border-radius: 8px;
+}
+
+/*-----------------buttons-----------------*/
+button{
+height:56px;
+color: #3F4449!important;
+text-align: left!important;
+border-radius: 8px;
+font-size: 18px!important;
+font-weight: 500!important;
+}
+button:hover , button:active{
+  background-color: #73CDE1;
+  color: #FCFCFC!important;
+}
+
+/*-----------------page-----------------*/
+.privacy.col-9 {
+  width: 77%;
+}
+.buttons-section.col{
+  width: 294px;
+  height: 504px;
+  flex: unset;
+}
+.col-1 {
+  width: 5%;
+  margin-top: 0.5%;
+  padding-left: 0;
+}
+
+  .page-heading{
+    color: #2D97B0;
+    font-size: 36px;
+    font-weight: 600;
+  }
+.sub-heading{
+  color:  #3F4449;
+font-size: 32px;
+font-weight: 500;
+}
+.content{
+  color: #3F4449;
+  font-size: 24px;
+  font-weight: 400;
+}
+  /*-----------------offcanva-----------------*/
+ 
+  @media (max-width: 1672px){
+    .privacy.col-9 {
+      width: 75%;
+    }} 
+
+    @media (max-width: 1535px){
+      .privacy.col-9 {
+        width: 72%;
+      }} 
+
+      @media (max-width: 1368px){
+        .privacy.col-9 {
+          width: 69%;
+        }} 
+  
+
+        @media (max-width: 1234px){
+          .privacy.col-9 {
+            width: 63%;
+          }} 
+
+          @media (max-width: 1030px){
+            .privacy.col-9 {
+              width: 60%;
+            }
+            .col-1 {
+              width: 5.5%;
+          }} 
+
+            @media (max-width: 950px){
+              .buttons-section.col{
+                width: 250px;
+              }} 
+
+              @media (max-width: 840px){
+                .privacy.col-9 {
+                  width: 57%;
+                }
+                .col-1 {
+                  width: 7%;
+              }} 
+
+                @media (max-width: 781px){
+                  .privacy.col-9 {
+                    width: 55%;
+                  }}
+
+
+  @media (max-width:767px){
+    .buttons-section{
+display: none;
+    }
+    .privacy.col-9 {
+      width: 100%;
+      margin-right: 1rem;
+    }
+  .sub-heading{
+    font-size: 24px;
+  }
+  .content{
+    font-size: 18px;
+  }                
+  .col-1 {
+    width: 5%;
+    margin-top: 0;
+}} 
+
+@media (max-width: 560px){
+  .col-1 {
+    width: 6%;
+}}
+
+@media (max-width: 470px){
+  .col-1 {
+    width: 7%;
+}} 
+
+@media (max-width: 470px){
+  .col-1 {
+    width: 8%;
+}} 
+
+@media (max-width: 350px){
+  .col-1 {
+    width: 9%;
+}} 
