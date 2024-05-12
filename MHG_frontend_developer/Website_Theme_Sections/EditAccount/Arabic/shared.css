@@ -1,0 +1,234 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/ArbFONTS-DINNextLTArabic-Bold-4.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/alfont_com_AlFont_com_DINNextLTArabic-Medium-2.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./Arabic/dinnextltarabic-regular.woff.ttf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+body{
+  overflow: auto;
+}
+.inline{
+  display: inline-flex;
+  width: 100%;
+}
+/*-----------------hr-----------------*/
+hr {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #cec6c6!important;
+  width: 98%;
+margin: 0rem 0.5rem!important;
+}
+hr:not([size]) {
+  height:unset;
+}
+.line-div {
+  border-right: 1px solid #3F4449;
+  box-sizing: border-box;
+  width: 1px;
+  height: 17px;
+  margin: 12px 3px 10px 0px;
+}
+/*-----------------form-----------------*/
+    .profile-heading{
+      color: #3F4449;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    section{
+    border: 1px solid #EDEEF0;
+    border-radius: 8px;
+    width: 50%;
+    height:90%;
+    padding-left: 0.7%;
+  }
+  .user-info{
+    color: #3F4449;
+    font-size: 24px;
+    font-weight: 600;
+    }   
+ label{
+  color: #3F4449;
+  font-size: 20px;
+  font-weight: 600;
+ }
+ label span{
+  color: #2D97B0;
+font-size: 16px;
+font-weight: 600;
+ }
+ form input , #validationCustom05{
+  height: 2.7rem!important;
+ }
+.form-control , select {
+color:#3F4449!important;
+font-size: 20px!important;
+font-weight: 400!important;
+ }
+ .phone-name{
+  display: none;
+ }
+.user-name{
+border: 1px solid  #C7CDD3!important;
+background: #EDEEF0!important;
+color:#C7CDD3!important;
+font-size: 20px!important;
+font-weight: 400!important;
+}
+::placeholder {
+color: #C7CDD3!important;
+font-size: 20px!important;
+font-weight: 400!important;
+}
+/*-----------------input width-----------------*/
+.col-5{
+    flex: 0.473 0 0%;
+}
+.phonenum{
+  border: 1px solid #EDEEF0!important;
+  border-radius: 8px!important;
+}
+.phonenum select{
+  border: none!important;
+ }
+.phonenum input{
+border: none!important;
+}
+input , #validationCustom05{
+  border-radius: 8px!important;
+  border: 1px solid #EDEEF0!important;
+  text-align: right;
+  }
+.form-control {
+  display: inline-flex;
+}
+/*-----------------buttons-----------------*/
+.submit{
+  border-radius: 8px;
+  background-color: #73CDE1;
+  color:#FFF!important;
+  font-size: 16px!important;
+  font-weight: 600;
+  width: 132px ;
+  height: 48px;
+  text-align: center!important;
+}
+.cancel , .cancel:active , .cancel:hover{
+  background-color: transparent;
+  color: #787E83!important;
+  font-size: 16px!important;
+  font-weight: 600;  
+}
+
+
+/*-----------------media-----------------*/
+@media (max-width: 1030px){ 
+  .ms-5 {
+    margin-right: 1rem!important;
+ }}
+
+
+@media (max-width: 965px){  
+label{
+font-size: 19px;
+}
+label span{
+  font-size: 15px;
+  }
+form input , #validationCustom05{
+height: 2.5rem!important;
+}
+.form-control , select , .user-name , ::placeholder{
+font-size: 18px!important;
+}}
+
+
+@media (max-width: 834px){  
+  label{
+  font-size: 18px;
+  }
+  label span{
+    font-size: 14px;
+    }
+  .form-control , select , .user-name , ::placeholder{
+  font-size: 17px!important;
+  }}
+
+
+ @media (max-width: 767px){
+.inline , .phone-name{
+  display: block;
+  width: 100%;
+}
+.fullname{
+  display: none;
+}
+.row>* {
+  padding-right: calc(var(--bs-gutter-x) * 0.4);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+    section{
+    width: 100%;
+    height:100%;
+    padding-left: 1%;
+  }
+.submit{
+  width: 80%;
+  align-items: center;
+}
+.cancel{
+  width: 20%;
+}
+.ms-5 {
+  margin-right: 0rem!important;
+}
+.phonenum-input{
+  width: 70%!important;
+}
+.col-5{
+width: 100%;
+flex: unset;
+}
+.buttons {
+  justify-content: center!important;
+  display: flex!important;
+}
+.profile-heading{
+  font-size: 24px;
+}  
+label{
+  font-size: 16px;
+}
+form input , #validationCustom05{
+height: 52px!important;
+}
+.form-control , select {
+font-size: 16px;
+}
+.user-name{
+color:#C7CDD3!important;
+font-size: 16px!important;
+}
+::placeholder {
+  font-size: 16px;
+}}
+
+
+@media (max-width: 510px){  
+  hr {
+  width: 98%;
+  margin: 0rem 0.3rem!important;
+  }}
