@@ -1,0 +1,265 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+.profile-section{
+  width: 909px;
+}
+.inline {
+  display: inline-flex;
+  position: relative;
+}
+/*-----------------colors-----------------*/
+:root{
+  --border-main:#EDEEF0;
+  --font-primary:#3F4449;
+  --blue: #73CDE1;
+  }
+/*-----------------hr-----------------*/
+hr {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--border-main);
+  opacity: 1;
+  margin-top: 0;
+  background-color: transparent;
+  width: 95%!important;
+  margin: 0rem 0.9rem!important;
+}
+.line-div {
+  border-left: 1px solid var(--border-main);
+  box-sizing: border-box;
+  width: 1px;
+  height: 80%!important;
+  margin: 1.2% 0% 0% 3%;
+  position: absolute;
+  box-sizing: border-box;
+}
+hr:not([size]) {
+  height:unset;
+}
+  /*-----------------profile-----------------*/
+  .profile-heading{
+    color: var(--font-primary);
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .profile-section .section{
+  border: 1px solid #EDEEF0;
+  border-radius: 8px;
+  width: 100%;
+  height:100%;
+}
+.order-num{
+  color: var(--font-primary);
+  font-size: 24px;
+  font-weight: 600;
+  }
+.inline a{
+  color: #4DB4CC;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 400;
+  }
+img{
+  width:116px;
+  height: 107px;
+  border-radius: 4px;
+}
+.info p{
+  color: var(--font-primary);
+  font-size: 20px;
+  font-weight: 600;
+  } 
+  .info p span{
+    color: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+        }
+.Shipped , .Pending , .Canceled , .payment{
+  font-size: 16px!important;
+  font-weight: 600;
+  border-radius: 18px;
+  padding: 6px 18px;
+}
+.Shipped{
+color: #47B881!important;
+background:  #F2FAF6;
+}
+.Pending{
+  color:  #FFAD0D!important;
+  background: #FFF9EE;
+}
+.Canceled{
+  color: #F64C4C!important;
+  background: #FFF9EE;
+}
+.payment{
+color: var(--blue)!important;
+background:  #ECFCFF;
+}
+.order-info{
+  margin: -0.6%;
+}
+.order-info p {
+  margin-bottom: 0rem;
+}
+.col-4 {
+  width: 30.33333333%;
+}
+.col-2 {
+  width: 21%;
+}
+  /*-----------------offcanva-----------------*/
+
+  @media (max-width: 767px){
+    .profile-section{
+      width: 100%;
+    }
+    .hide{
+      display: none;
+    }
+  .profile-heading{
+font-size: 24px;
+  }
+.inline a{
+font-size: 18px;
+  }
+img{
+  width:82px;
+  height: 76px;
+}
+.info p{
+font-size: 16px;
+  } 
+.Shipped , .Pending , .Canceled , .payment , .info p span{
+font-size: 14px!important;
+}
+ .col-8 {
+    width: 60%;
+}
+.col-4{
+  width: 40%;
+}
+.line-div {
+  height: 70%!important;
+  margin: 1.4% 0% 0% 3%;
+}
+.mb-2 {
+  margin-bottom: 0.25rem!important;
+} }
+
+
+@media (max-width: 553px){
+  .col-8 {
+    width: 50%;
+}
+.col-4{
+  width: 50%;
+}}
+
+
+@media (max-width: 450px){
+.profile-heading , .order-num{
+font-size: 22px;
+}
+.inline a{
+font-size: 16px;
+}
+img{
+  width:72px;
+  height: 66px;
+}
+.info p{
+font-size: 14px;
+} 
+.Shipped , .Pending , .Canceled , .payment , .info p span{
+font-size: 12px!important;
+}
+.col-8 {
+  width: 55%;
+}
+.col-4{
+width: 45%;
+}
+.line-div {
+height: 60%!important;
+margin: 2% 0% 0% 3%;
+
+}
+.Shipped , .Pending , .Canceled , .payment{
+  padding: 4px 11px;
+}}
+
+
+@media (max-width: 389px){
+  .col-8 {
+    width: 52%;
+  }
+  .col-4{
+  width: 48%;
+  }}
+
+
+  @media (max-width: 365px){
+    img{
+      width:62px;
+      height: 56px;
+    }
+    .col-8 {
+      width: 47%;
+    }
+    .col-4{
+      width: 53%;
+    }
+    .col-2{
+      width: 23%;
+    }}
+
+    @media (max-width: 366px){
+      img{
+        width:62px;
+        height: 56px;
+      }
+      .col-8 {
+        width: 48%;
+      }
+      .col-4{
+        width: 55.5%;
+      }
+      .col-2{
+        width: 25%;
+      }
+      .col-9 {
+        width: 70%;
+    }}
+    
+
+    @media (max-width: 333px){
+      img{
+        width:62px;
+        height: 56px;
+      }
+      .col-8 {
+        width: 48%;
+      }
+      .col-4{
+        width: 55.5%;
+      }}
+
+

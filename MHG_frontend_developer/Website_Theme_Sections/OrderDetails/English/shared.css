@@ -1,0 +1,252 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Book.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+.info-container{
+  width: 559px;
+  }
+  .order-info , .billing-info{
+    border-radius: 8px;
+    border: 1px solid var(--border-main);  
+  }
+.inline{
+  display: inline-flex;
+  width: 100%;
+}
+/*-----------------colors-----------------*/
+:root{
+  --border-main:#EDEEF0;
+  --font-primary:#3F4449;
+  --blue: #73CDE1;
+  }
+/*-----------------hr-----------------*/
+hr {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--border-main);
+  opacity: 1;
+  margin-top: 0;
+  background-color: transparent;
+  width: 100%;
+  margin: 0rem!important;
+}
+.bottom{
+  width: 95%;
+  margin: 0rem 0.9rem!important;
+  border-bottom: 1px solid #C7CDD3;
+}
+hr:not([size]) {
+  height:unset;
+}
+/*-----------------tracker-----------------*/
+.track{
+  width: 1027px;
+}
+.track .col-3{
+  width: 25%;
+  padding: 0!important;
+}
+.track .ms-5{
+  margin-left: 7rem!important;
+}
+.step:not(:last-child):after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #C7CDD3;
+  position: absolute;
+  top: 58%;
+  left: 45%;
+  z-index: 1;
+}
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #C7CDD3;
+  z-index: 2;
+  position: relative;
+}
+.active .circle{
+  background-color: #4DB4CC;
+}
+.active p {
+  color: #4DB4CC!important;
+font-size: 18px;
+font-weight: 600;
+}
+.track .row span {
+color: #5A6065;
+font-size: 18px;
+font-weight: 400;
+}
+.track .row p {
+  color: #C7CDD3;
+  font-size: 18px;
+  font-weight: 600;
+    }
+.first:after {
+background-color: #4DB4CC!important;
+}
+/*-----------------button-----------------*/
+.phone{
+  display: none;
+ }
+.order-button:focus {
+  outline: none;
+}
+.order-button {
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: var(--font-primary);
+    border: none;
+    padding: 0.5rem;
+}
+.order-details {
+color: var(--font-primary);
+font-size: 24px;
+font-weight: 600;
+}
+svg {
+    margin-left: 0.25rem;
+}
+.back button {
+  color: var(--blue);
+font-size: 18px;
+font-weight: 600;
+}
+/*-----------------content-----------------*/
+.col-6{
+  padding-right: 0;
+}
+.heading{
+color: var(--font-primary);
+font-size: 32px;
+font-weight: 700;
+margin-bottom: 0rem;
+}
+.details p{
+color: var(--font-primary);
+font-size: 20px;
+font-weight: 700;
+}
+.details p span{
+  color: #5A6065;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.desc{
+  font-weight: 600!important;
+  color: #1F2225!important;
+font-size: 20px;
+font-weight: 600;
+  }
+.num{
+  font-weight: 400!important;
+  text-align: right;
+  padding-right: 15px;
+  }
+  .num_red{
+    color: #F64C4C!important;
+  }
+  .tot{
+    color: #1F2225!important;
+font-size: 24px!important;
+font-weight: 600!important;
+  }
+  /*-----------------media-----------------*/
+    @media (max-width: 767px){ 
+      .order-info .col-6{
+        max-width: unset;
+        width: 100%;
+      }
+     .phone{
+      display: flex;
+      width: 100%;
+    }
+    .desk , .back{
+      display: none;
+    }
+    .info-container{
+      width: 100%;
+      }
+      .details .inline{
+        display:unset;
+      }
+    .track{
+      width:100%;
+    }
+    .track .ms-5{
+      margin-left: 5rem!important;
+    }
+    .step:not(:last-child):after {
+      top: 56%;
+    }
+    .track .row span , .track .row p {
+    font-size: 14px;
+      }
+    .details p , .details p span , .desc , .num{
+font-size: 18px;
+padding-left: 8px;
+    }}
+
+
+
+    @media (max-width: 684px){ 
+     .track .ms-5{
+       margin-left: 4.4rem!important;
+     }
+     .row {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      margin-top: unset;
+      margin-right: unset;
+     margin-left: unset;
+        }}
+    
+
+        @media (max-width: 625px){ 
+          .track .ms-5{
+            margin-left: 3rem!important;
+          }}
+
+          @media (max-width: 428px){ 
+            .track .ms-5{
+              margin-left: 2rem!important;
+            }}
+
+            @media (max-width: 387px){ 
+              .track .ms-5{
+                margin-left: 2rem!important;
+              }
+              .track .row span , .track .row p {
+                font-size: 12px;
+                  }}
+
+                  @media (max-width: 332px){ 
+                    .track .row span , .track .row p {
+                      font-size: 11px;
+                        }}
