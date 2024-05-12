@@ -3,14 +3,16 @@
 
 ## Arabic Version:
 
-* Computer View: 
+* Computer View:<br>
+
 ![](ar-computer.PNG)
 <br><br>
 
 ![](ar-computer1.PNG)
 <br><br>
 
-* Phone View:
+* Phone View:<br>
+
 ![](ar-phone.PNG)
 <br><br>
 
@@ -19,13 +21,15 @@
 
 ## English Version:
 
-* Computer View:
+* Computer View:<br>
+
 ![](en-computer.PNG)
 <br><br>
 
 ![](en-computer1.PNG)
 <br><br>
-* Phone View:
+
+* Phone View:<br>
 
 ![](en-phone.PNG)
 <br><br>
