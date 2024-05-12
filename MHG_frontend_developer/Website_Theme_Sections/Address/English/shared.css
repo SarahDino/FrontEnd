@@ -1,0 +1,248 @@
+/*-----------------global-----------------*/
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Semi-Bold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Book.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "unisans";
+  src: url(./English/Uni-Sans-Regular.otf);
+  font-weight: 400;
+}
+*{
+  font-family: "unisans";
+}
+body{
+  background-color: #FCFCFC;
+  overflow: scroll;
+}
+.page-section{
+  width: 48.5%;
+}
+.inline , .inline-edit{
+  display: flex;
+  width: 100%;
+}
+/*-----------------colors-----------------*/
+:root{
+--border-main:#EDEEF0;
+--font-primary:#3F4449;
+--blue: #73CDE1;
+}
+/*-----------------hr-----------------*/
+hr {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--border-main);
+  opacity: 1;
+  margin-top: 0;
+  background-color: transparent;
+  width: 99%;
+  margin: 0rem;
+}
+.line-div {
+  border-left: 1px solid #C7CDD3;
+  box-sizing: border-box;
+  width: 1px;
+  height: 29px;
+  margin: 0px 5px 0px 0px;
+}
+hr:not([size]) {
+  height:unset;
+}
+/*-----------------Current Amount container-----------------*/
+.container-address{
+  border-radius: 8px;
+  border: 1px solid var(--border-main);  
+}
+.heading{
+  color: var(--font-primary);
+  font-size: 32px;
+  font-weight: 700;
+}
+.sub-head{
+  color: var(--font-primary);
+  font-size: 24px;
+  font-weight: 600;
+}
+.info-head svg{
+  border-radius: 4px;
+  background: rgba(237, 238, 240, 0.60);
+  margin-right: 2%;
+  margin-bottom: 1%;
+  width: 40px;
+  height: 40px;
+  padding: 1%;
+  }
+.info p{
+  color: var(--font-primary);
+  font-size: 20px;
+  font-weight: 700;
+  } 
+  .info p span{
+    color: #5A6065;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .update{
+    color:#787E83;
+font-size: 14px;
+font-weight: 400;
+  }
+/*-----------------buttons-----------------*/
+  .add{
+    background: var(--blue) ;
+    color:#FFF;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .info-head button {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0px;
+    flex-grow: 1;
+    width: auto;
+    text-decoration: underline;
+    }
+    .edit {
+      color:#4DB4CC;
+    }
+    .delete{
+      color: #EB6F70;
+    }
+  
+/*-----------------media-----------------*/
+
+@media (max-width: 1505px){
+  .info-head button {
+    width: 5%;
+    }
+    .sub-head.col-8{
+      width: 60%;
+  }}
+  
+  @media (max-width: 1369px){
+    .add.col-2 {
+      width: 20%;
+  }
+  .heading.col-10 {
+    width: 80%;
+}}
+
+@media (max-width: 1140px){
+  .add.col-2 {
+    width: 30%;
+}
+.heading.col-10 {
+  width: 70%;
+}}
+  @media (max-width: 1230px){
+    .sub-head.col-8{
+        width: 55%;
+    }}
+
+    @media (max-width: 1100px){
+      .sub-head.col-8{
+          width: 48%;
+      }}
+    
+      @media (max-width: 920px){
+        .info-head button {
+          width: 10%;
+          }
+          .sub-head.col-8{
+            width: 40%;
+        }}
+      
+      @media (max-width: 767px){
+        .inline.info{
+          display: block;
+        }
+      .page-section{
+        width:100%;
+      }
+        .add.col-2 {
+          width: 20%;
+      }
+      .heading.col-10 {
+        width: 80%;
+      }
+      .sub-head.col-8{
+        width: 65%;
+    }
+.heading{
+  font-size: 24px;
+}
+.info p{
+  font-size: 18px;
+  } 
+  .info p span{
+    font-size: 18px;
+  }
+  .add{
+    height: 40px;
+    font-size: 14px;
+  }
+  .info-head button {
+    font-size: 18px;
+    }}
+
+    
+    @media (max-width: 570px){
+      .sub-head.col-8{
+        width: 60%;
+    }}
+
+    @media (max-width: 513px){
+      .add.col-2 {
+        width: 30%;
+    }
+    .heading.col-10 {
+      width: 70%;
+    }}
+    
+
+    @media (max-width: 490px){
+      .sub-head.col-8{
+        width: 55%;
+    }}
+    
+
+    @media (max-width: 430px){
+      .sub-head.col-8{
+        width: 50%;
+    }}
+    
+    @media (max-width: 385px){
+      .sub-head.col-8{
+        width: 45%;
+    }}
+    
+    @media (max-width: 350px){
+      .sub-head.col-8{
+        width: 40%;
+    }}
+  
+
+    @media (max-width: 342px){
+      .add.col-2 {
+        width: 40%;
+    }
+    .heading.col-10 {
+      width: 60%;
+    }}
+
+      
+          
