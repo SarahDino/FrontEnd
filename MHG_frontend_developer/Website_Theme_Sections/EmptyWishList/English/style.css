@@ -1,0 +1,98 @@
+/*-----------------global-----------------*/
+@font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Bold.otf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Semi-Bold.otf);
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Book.otf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "unisans";
+    src: url(./English/Uni-Sans-Regular.otf);
+    font-weight: 400;
+  }
+  *{
+    font-family: "unisans";
+  }
+  body{
+    overflow: auto;
+    background: #FCFCFC;
+  }
+  /*-----------------colors-----------------*/
+  :root{
+    --font-primary:#3F4449;
+    --blue: #73CDE1;
+    }
+  /*-----------------page-----------------*/
+      .wallet-heading{
+        color: var(--font-primary);
+        font-size: 32px;
+        font-weight: 700;
+      }
+      section{
+      width: 909px;
+    }
+    img{
+     width: 163px;   
+     height: 179px;
+    }
+    .blue{
+        color: var(--blue);
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .wallet-heading span{
+      color: var(--font-primary);
+      font-size: 16px;
+font-weight: 400;
+}
+    .gray{
+        color: var(--font-primary);
+        font-size: 24px;
+        font-weight: 400;
+    }
+  /*-----------------buttons-----------------*/
+  .submit{
+    border-radius: 8px;
+    background-color: var(--blue);
+    color:#FFF;
+    font-size: 24px;
+    font-weight: 600;
+    width: 244px ;
+    height: 56px;
+    text-align: center;
+  }
+  /*-----------------media-----------------*/  
+  @media (max-width: 767px){
+    .wallet-heading{
+      font-size: 24px;
+    }
+          section{
+          width: 100%;
+        }
+        img{
+         width: 148px;   
+         height: 163px;
+        }
+        .blue{
+            font-size: 24px;
+                }
+        .gray{
+            font-size: 20px;
+        }
+      .submit{
+        font-size: 16px;
+        width: 137px ;
+        height: 48px;
+      }}  
+  
+  
+  
